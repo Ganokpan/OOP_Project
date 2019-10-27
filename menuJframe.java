@@ -340,51 +340,79 @@ public class menuJframe extends javax.swing.JFrame {
     /* จำนวนการสั่งไก่ทอด */
     private void jSpinner13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSpinner13MouseClicked
         // TODO add your handling code here:
+        int price = 60;
+        int amount = Integer.parseInt((String)jSpinner13.getValue());
+        int total1 = price*amount;
     }//GEN-LAST:event_jSpinner13MouseClicked
 
     /* จำนวนการสั่งไก่ชีส */
     private void jSpinner14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSpinner14MouseClicked
         // TODO add your handling code here:
+        int price = 100;
+        int amount = Integer.parseInt((String)jSpinner14.getValue());
+        int total2 = price*amount;
     }//GEN-LAST:event_jSpinner14MouseClicked
 
     /* จำนวนการสั่งไก่วิ้งแซ่บ */
     private void jSpinner15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSpinner15MouseClicked
         // TODO add your handling code here:
+        int price = 80;
+        int amount = Integer.parseInt((String)jSpinner15.getValue());
+        int total3 = price*amount;
     }//GEN-LAST:event_jSpinner15MouseClicked
 
     /* จำนวนการสั่งนักเก็ตส์ */
     private void jSpinner16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSpinner16MouseClicked
         // TODO add your handling code here:
+        int price = 35;
+        int amount = Integer.parseInt((String)jSpinner16.getValue());
+        int total4 = price*amount;
     }//GEN-LAST:event_jSpinner16MouseClicked
 
     /* จำนวนการสั่งเฟรนฟราย */
     private void jSpinner17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSpinner17MouseClicked
         // TODO add your handling code here:
+        int price = 45;
+        int amount = Integer.parseInt((String)jSpinner17.getValue());
+        int total5 = price*amount;
     }//GEN-LAST:event_jSpinner17MouseClicked
 
     /* จำนวนการสั่งเบอร์เกอร์ไก่ทอด */
     private void jSpinner18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSpinner18MouseClicked
         // TODO add your handling code here:
+        int price = 79;
+        int amount = Integer.parseInt((String)jSpinner18.getValue());
+        int total6 = price*amount;
     }//GEN-LAST:event_jSpinner18MouseClicked
 
     /* จำนวนการสั่งเครื่องดื่ม โค้ก */
     private void jSpinner19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSpinner19MouseClicked
         // TODO add your handling code here:
+        int price = 40;
+        int amount = Integer.parseInt((String)jSpinner19.getValue());
+        int total7 = price*amount;
     }//GEN-LAST:event_jSpinner19MouseClicked
 
     /* จำนวนการสั่งเครื่องดื่ม เป็ปซี่ */
     private void jSpinner20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSpinner20MouseClicked
         // TODO add your handling code here:
+        int price = 40;
+        int amount = Integer.parseInt((String)jSpinner20.getValue());
+        int total8 = price*amount;
     }//GEN-LAST:event_jSpinner20MouseClicked
 
     /* จำนวนการสั่งเครื่องดื่ม น้ำเปล่า */
     private void jSpinner21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSpinner21MouseClicked
         // TODO add your handling code here:
+        int price = 15;
+        int amount = Integer.parseInt((String)jSpinner21.getValue());
+        int total9 = price*amount;
     }//GEN-LAST:event_jSpinner21MouseClicked
 
     /* ยืนยันคำสั่งซื้อ */
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
+        jTextField1.setText(" ");
     }//GEN-LAST:event_jButton1MouseClicked
 
     
