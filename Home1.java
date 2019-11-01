@@ -40,7 +40,7 @@ public class Home1 extends javax.swing.JFrame {
         });
 
         JMember.setFont(new java.awt.Font("Angsana New", 1, 24)); // NOI18N
-        JMember.setText("หน้าต่างสมาชิก");
+        JMember.setText("สั่งอาหาร(Member)");
         JMember.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JMemberActionPerformed(evt);
