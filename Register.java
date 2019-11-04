@@ -1,21 +1,47 @@
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import javax.swing.JButton;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package OOPJFrame;
+
 
 /**
  *
  * @author User
  */
 public class Register extends javax.swing.JFrame {
+    Connection _connect = null;
+    Statement _sql_statment = null;
 
     /**
      * Creates new form Register
      */
     public Register() {
         initComponents();
+        try {
+			Class.forName("com.mysql.jdbc.Driver");
+			_connect =  DriverManager.getConnection("jdbc:mysql://localhost/oop" +
+					"?user=root&password=");
+
+			if(_connect != null){
+				System.out.println("Database Connected.");
+			} else {
+				System.out.println("Database Connect Failed.");
+			}
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+                        System.out.println(e.toString());
+		}
+		
     }
 
     /**
@@ -72,6 +98,15 @@ public class Register extends javax.swing.JFrame {
 
         Jclickconfirm.setFont(new java.awt.Font("Angsana New", 0, 18)); // NOI18N
         Jclickconfirm.setText("ยืนยัน");
+          Jclickconfirm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                 JclickconfirmActionperformed(evt);
+               
+                         
+               
+             
+            }
+        });
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -158,7 +193,7 @@ public class Register extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
+ 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
@@ -168,8 +203,34 @@ public class Register extends javax.swing.JFrame {
         login.setVisible(true);
         
         setVisible(false);
-    }//GEN-LAST:event_JReturnActionPerformed
+        System.out.println("Clicked");
 
+    }//GEN-LAST:event_JReturnActionPerformed
+    private void JclickconfirmActionperformed(java.awt.event.ActionEvent evt){
+          
+         try{
+             
+                  if(jTextField1.getText().equals("")||jTextField2.getText().equals("")||jTextField3.getText().equals("")||jTextField4.getText().equals("")){
+                      System.out.println("please enter Information");;}else{
+                 if(jTextField3.getText().equals(jTextField2.getText())){
+            _sql_statment = _connect.createStatement();
+            String sql_commnad = "INSERT INTO register (username,password,comfirmpassword,firstname,telephone) VALUES ('"+jTextField1.getText()+"', '"+jTextField2.getText()+"','"+jTextField3.getText()+"','"+jTextField4.getText()+"','"+jTextField5.getText()+"') ";
+            _sql_statment.execute(sql_commnad);
+             System.out.println("save data complete");}else{
+                System.out.println("your password do not match");}
+
+
+            }
+             
+          
+            
+            
+            
+        }catch(Exception ex){
+            System.out.println(ex.toString());
+        }
+       
+    }
     /**
      * @param args the command line arguments
      */
@@ -198,15 +259,14 @@ public class Register extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Register().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Register().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton JReturn;
+
     public javax.swing.JButton Jclickconfirm;
     public javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
