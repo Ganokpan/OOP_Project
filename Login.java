@@ -1,9 +1,15 @@
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package OOPJFrame;
+
 
 /**
  *
@@ -14,8 +20,26 @@ public class Login extends javax.swing.JFrame {
     /**
      * Creates new form Login
      */
+    Connection _connect = null;
+    Statement _sql_statment = null;
     public Login() {
         initComponents();
+         try {
+			Class.forName("com.mysql.jdbc.Driver");
+			_connect =  DriverManager.getConnection("jdbc:mysql://localhost/oop" +
+					"?user=root&password=");
+
+			if(_connect != null){
+				System.out.println("Database Connected.");
+			} else {
+				System.out.println("Database Connect Failed.");
+			}
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+                        System.out.println(e.toString());
+		}
     }
 
     /**
@@ -140,6 +164,28 @@ public class Login extends javax.swing.JFrame {
 
     private void JLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JLoginActionPerformed
         // TODO add your handling code here:
+         try{
+            
+            _sql_statment = _connect.createStatement();
+            String sql_commnad = "SELECT * FROM register WHERE username='"+jTextField1.getText()+"' AND password='"+jTextField2.getText()+"' ";
+            ResultSet rs = _sql_statment.executeQuery(sql_commnad);
+            if(rs.next()){
+                String telephone = rs.getString(5);
+                String firstname = rs.getString(4);
+                System.out.println("Found data: "+"   "+"Name:  "+firstname +"  Phone:  "+ telephone );
+                
+              
+            }else{
+                System.out.println("Not found user");
+            }
+  
+            
+            
+            
+            
+        }catch(Exception ex){
+            System.out.println(ex.toString());
+        }
     }//GEN-LAST:event_JLoginActionPerformed
 
     private void JRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JRegisterActionPerformed
