@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package OOPJFrame;
 
 /**
  *
@@ -206,6 +205,100 @@ public class Member extends javax.swing.JFrame {
         jButton1.setMaximumSize(new java.awt.Dimension(61, 31));
         jButton1.setMinimumSize(new java.awt.Dimension(61, 31));
         jButton1.setPreferredSize(new java.awt.Dimension(61, 31));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                int Num1 = 0;
+                int Num2 = 0;
+                int Num3 = 0;
+                int Num4 = 0;
+                int Num5 = 0;
+                int Num6 = 0;
+                int Num7 = 0;
+                int Num8 = 0;
+                int Num9 = 0;
+                int point = 0;
+              
+                if((NumchickenMem.getText()).equals("") || !(NumchickenMem.getText()).equals("")){
+                    if((NumchickenMem.getText()).equals("")){
+                        Num1 = 0;
+                    }else if(!(NumchickenMem.getText()).equals("")){
+                        int Num = Integer.parseInt(NumchickenMem.getText());
+                        Num1 = Num*60;
+                        point += 30;
+                    }    
+                }if((NumchickenChesmem .getText()).equals("") || !(NumchickenChesmem .getText()).equals("")){
+                    if((NumchickenChesmem .getText()).equals("")){
+                        Num2 = 0;
+                    }else if(!(NumchickenChesmem .getText()).equals("")){
+                        int Num = Integer.parseInt(NumchickenChesmem .getText());
+                        Num2 = Num*100;
+                        point += 30;
+                    }    
+                }if((chickenZEEDmem .getText()).equals("") || !(chickenZEEDmem .getText()).equals("")){
+                    if((chickenZEEDmem .getText()).equals("")){
+                        Num3 = 0;
+                    }else if(!(chickenZEEDmem .getText()).equals("")){
+                        int Num = Integer.parseInt(chickenZEEDmem .getText());
+                        Num3 = Num*80;
+                        point += 30;
+                    }    
+                }if((NuggetsMem.getText()).equals("") || !(NuggetsMem.getText()).equals("")){
+                    if((NuggetsMem.getText()).equals("")){
+                        Num4 = 0;
+                    }else if(!(NuggetsMem.getText()).equals("")){
+                        int Num = Integer.parseInt(NuggetsMem.getText());
+                        Num4 = Num*35;
+                        point += 30;
+                    }    
+                }if((FrenchfriesMem.getText()).equals("") || !(FrenchfriesMem.getText()).equals("")){
+                    if((FrenchfriesMem.getText()).equals("")){
+                        Num5 = 0;
+                    }else if(!(FrenchfriesMem.getText()).equals("")){
+                        int Num = Integer.parseInt(FrenchfriesMem.getText());
+                        Num5 = Num*45;
+                        point += 30;
+                    }    
+                }if((BurgerMem .getText()).equals("") || !(BurgerMem .getText()).equals("")){
+                    if((BurgerMem .getText()).equals("")){
+                        Num6 = 0;
+                    }else if(!(BurgerMem .getText()).equals("")){
+                        int Num = Integer.parseInt(BurgerMem .getText());
+                        Num6 = Num*79;
+                        point += 30;
+                    }    
+                }if((Colamem .getText()).equals("") || !(Colamem .getText()).equals("")){
+                    if((Colamem .getText()).equals("")){
+                        Num7 = 0;
+                    }else if(!(Colamem .getText()).equals("")){
+                        int Num = Integer.parseInt(Colamem .getText());
+                        Num7 = Num*40;
+                        point += 30;
+                    }    
+                }if((jTextField8.getText()).equals("") || !(jTextField8 .getText()).equals("")){
+                    if((jTextField8 .getText()).equals("")){
+                        Num8 = 0;
+                    }else if(!(jTextField8 .getText()).equals("")){
+                        int Num = Integer.parseInt(jTextField9.getText());
+                        Num8 = Num*40;
+                        point += 30;
+                    }    
+                }if((jTextField9.getText()).equals("") || !(jTextField9.getText()).equals("")){
+                    if((jTextField9 .getText()).equals("")){
+                        Num9 = 0;
+                    }else if(!(jTextField9 .getText()).equals("")){
+                        int Num = Integer.parseInt(jTextField9.getText());
+                        Num9 = Num*15;
+                        point += 30;
+                    }    
+                }
+                
+                int total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
+                jTextField10.setText(total+" ");
+                jTextField11.setText(point+" ");
+            }
+        });
+        
 
         jTextField10.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
         jTextField10.setPreferredSize(new java.awt.Dimension(6, 22));
@@ -221,11 +314,7 @@ public class Member extends javax.swing.JFrame {
         jButton3.setMaximumSize(new java.awt.Dimension(61, 31));
         jButton3.setMinimumSize(new java.awt.Dimension(61, 31));
         jButton3.setPreferredSize(new java.awt.Dimension(61, 31));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
+        
 
         jTextField11.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
         jTextField11.setPreferredSize(new java.awt.Dimension(6, 22));
@@ -235,6 +324,7 @@ public class Member extends javax.swing.JFrame {
 
         jLabel34.setFont(new java.awt.Font("Angsana New", 0, 18)); // NOI18N
         jLabel34.setText("30แต้ม");
+        
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -469,10 +559,8 @@ public class Member extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Member().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Member().setVisible(true);
         });
     }
 
