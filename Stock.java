@@ -12,7 +12,7 @@ package OOPJFrame;
 public class Stock extends javax.swing.JFrame {
 
     /**
-     * Creates new form Stock
+     * Creates new form table
      */
     public Stock() {
         initComponents();
@@ -27,13 +27,33 @@ public class Stock extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jButton1.setText("หน้าหลัก");
-        jButton1.setPreferredSize(new java.awt.Dimension(101, 37));
+        jTable1.setFont(new java.awt.Font("Angsana New", 0, 18)); // NOI18N
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"น่องไก่", null, null},
+                {"อกไก่", null, null},
+                {"สันใน", null, null},
+                {"เฟรนฟราย", null, null},
+                {"นักส์เก็ต", null, null},
+                {"เป๊ปซี่", null, null},
+                {"น้ำเปล่า", "", null},
+                {"โค้ก", null, null}
+            },
+            new String [] {
+                "วัตถุดิบ", "จำนวนทั้งหมด", "จำนวนที่เหลือ"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        jButton1.setFont(new java.awt.Font("Angsana New", 0, 18)); // NOI18N
+        jButton1.setText("กลับ");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -45,14 +65,20 @@ public class Stock extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 409, Short.MAX_VALUE))
+                .addGap(80, 80, 80)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(83, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 602, Short.MAX_VALUE))
+                .addComponent(jButton1)
+                .addGap(22, 22, 22)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         pack();
@@ -60,8 +86,8 @@ public class Stock extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Home1 home = new Home1();
-        home.setVisible(true);
+        NewHome New = new NewHome();
+        New.setVisible(true);
 
         setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -92,6 +118,7 @@ public class Stock extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Stock.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -103,5 +130,7 @@ public class Stock extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton jButton1;
+    private javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

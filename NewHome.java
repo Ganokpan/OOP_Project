@@ -31,6 +31,10 @@ public class NewHome extends javax.swing.JFrame {
         Nomember = new javax.swing.JButton();
         Member = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        graph = new javax.swing.JMenu();
+        Graph = new javax.swing.JMenuItem();
+        Jtable = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -62,6 +66,35 @@ public class NewHome extends javax.swing.JFrame {
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 470, 210));
 
+        graph.setText("อื่นๆ");
+        graph.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                graphActionPerformed(evt);
+            }
+        });
+
+        Graph.setFont(new java.awt.Font("Angsana New", 0, 18)); // NOI18N
+        Graph.setText("กราฟ");
+        Graph.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GraphActionPerformed(evt);
+            }
+        });
+        graph.add(Graph);
+
+        Jtable.setFont(new java.awt.Font("Angsana New", 0, 18)); // NOI18N
+        Jtable.setText("สต้อกสินค้า");
+        Jtable.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JtableActionPerformed(evt);
+            }
+        });
+        graph.add(Jtable);
+
+        jMenuBar1.add(graph);
+
+        setJMenuBar(jMenuBar1);
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -79,6 +112,24 @@ public class NewHome extends javax.swing.JFrame {
         
         setVisible(false);
     }//GEN-LAST:event_MemberActionPerformed
+
+    private void graphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graphActionPerformed
+
+    }//GEN-LAST:event_graphActionPerformed
+
+    private void GraphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GraphActionPerformed
+        graph Graph = new graph();
+        Graph.setVisible(true);
+        
+        setVisible(false);
+    }//GEN-LAST:event_GraphActionPerformed
+
+    private void JtableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JtableActionPerformed
+       Stock Stock = new Stock();
+        Stock.setVisible(true);
+        
+        setVisible(false);
+    }//GEN-LAST:event_JtableActionPerformed
 
     /**
      * @param args the command line arguments
@@ -116,9 +167,13 @@ public class NewHome extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JMenuItem Graph;
+    public javax.swing.JMenuItem Jtable;
     public javax.swing.JButton Member;
     public javax.swing.JButton Nomember;
+    public javax.swing.JMenu graph;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
