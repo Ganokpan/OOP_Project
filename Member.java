@@ -521,14 +521,17 @@ public class Member extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Home1 home = new Home1();
+        NewHome home = new NewHome();
         home.setVisible(true);
 
         setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        //ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
+        //checkpro pro = new checkpro();
+        //pro.setVisible(true);
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
