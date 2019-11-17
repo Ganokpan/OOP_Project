@@ -3,19 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package OOPJFrame;
 
+/**
+ *
+ * @author ASUS
+ */
 import javax.swing.*;
+import java.applet.*;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
 
 /**
  *
  * @author User
  */
-public class graph extends javax.swing.JFrame {
-    
+public class graph extends javax.swing.JFrame{
+
     public graph() {
         initComponents();
-        
+
     }
 
     /**
@@ -38,12 +45,12 @@ public class graph extends javax.swing.JFrame {
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 437, Short.MAX_VALUE)
+                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 437, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 285, Short.MAX_VALUE)
+                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 285, Short.MAX_VALUE)
         );
 
         jLabel2.setFont(new java.awt.Font("Angsana New", 0, 48)); // NOI18N
@@ -61,27 +68,27 @@ public class graph extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(152, 152, 152)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(47, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(43, 43, 43)
+                                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(152, 152, 152)
+                                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(47, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(26, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(11, 11, 11)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         pack();
@@ -89,7 +96,7 @@ public class graph extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Home1 home = new Home1();
+        NewHome home = new NewHome();
         home.setVisible(true);
 
         setVisible(false);
@@ -98,6 +105,129 @@ public class graph extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+    public void init() {
+
+    }
+
+    public void paint(Graphics g) {
+
+//ตีนหลัง
+        g.setColor(Color.darkGray);
+        g.fillArc(405, 255, 75, 100, 0, 180);
+
+        g.setColor(Color.black);
+        g.drawLine(450, 305, 450, 280);
+
+        g.setColor(Color.black);
+        g.drawLine(455, 305, 455, 280);
+
+        g.setColor(Color.darkGray);
+        g.fillArc(200, 255, 75, 100, 0, 180);
+
+        g.setColor(Color.black);
+        g.drawLine(230, 305, 230, 280);
+
+        g.setColor(Color.black);
+        g.drawLine(225, 305, 225, 280);
+
+//ตัว
+        g.setColor(Color.gray);
+        g.fillArc(200, -200, 200, 500, 235, 70);
+
+        g.setColor(Color.gray);
+        g.fillArc(280, -200, 200, 500, 235, 70);
+
+        g.setColor(Color.gray);
+        g.fillRoundRect(300, 100, 80, 200, 90, 90);
+
+        g.setColor(Color.gray);
+        g.fillRect(240, 255, 200, 50);
+
+//ตา
+        g.setColor(Color.white);
+        g.fillArc(285, 140, 55, 50, 0, 360);
+
+        g.setColor(Color.black);
+        g.drawArc(285, 140, 55, 50, 0, 360);
+
+        g.setColor(Color.white);
+        g.fillArc(340, 140, 55, 50, 0, 360);
+
+        g.setColor(Color.black);
+        g.drawArc(340, 140, 55, 50, 0, 360);
+
+//แววตา
+        g.setColor(Color.black);
+        g.fillArc(310, 155, 15, 20, 0, 360);
+
+        g.setColor(Color.black);
+        g.fillArc(350, 155, 15, 20, 0, 360);
+
+//จมูก
+        g.setColor(Color.yellow);
+        g.fillArc(330, 175, 20, 25, 0, 360);
+
+//หนวด
+        g.setColor(Color.black);
+        g.drawLine(330, 190, 250, 200);
+
+        g.setColor(Color.black);
+        g.drawLine(330, 190, 250, 205);
+
+        g.setColor(Color.black);
+        g.drawLine(330, 190, 250, 210);
+
+        g.setColor(Color.black);
+        g.drawLine(430, 200, 350, 190);
+
+        g.setColor(Color.black);
+        g.drawLine(430, 205, 350, 190);
+
+        g.setColor(Color.black);
+        g.drawLine(430, 210, 350, 190);
+
+//ปาก
+        g.setColor(Color.black);
+        g.fillArc(300, 220, 75, 5, 180, 180);
+
+        g.setColor(Color.black);
+        g.drawLine(340, 225, 340, 200);
+
+//ตีนหน้า
+        g.setColor(Color.darkGray);
+        g.fillArc(340, 268, 55, 75, 0, 180);
+
+        g.setColor(Color.black);
+        g.drawLine(365, 305, 365, 290);
+
+        g.setColor(Color.black);
+        g.drawLine(370, 305, 370, 290);
+
+        g.setColor(Color.darkGray);
+        g.fillArc(290, 268, 55, 75, 0, 180);
+
+        g.setColor(Color.black);
+        g.drawLine(320, 305, 320, 290);
+
+        g.setColor(Color.black);
+        g.drawLine(325, 305, 325, 290);
+
+//ชื่อ
+        Font f1 = new Font("Monotype Corsiva", Font.ITALIC, 50);
+
+        g.setFont(f1);
+
+        g.setColor(Color.red);
+        g.drawString("Kitsada Kanna", 160, 490);
+
+        g.setColor(Color.red);
+        g.drawString("5411133400011", 165, 530);
+
+        g.setColor(Color.red);
+        g.drawString("Cartoon cat naruk....", 130, 570);
+
+    }
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
