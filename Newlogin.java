@@ -1,21 +1,46 @@
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.print.DocFlavor;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package OOPJFrame;
 
 /**
  *
  * @author User
  */
-public class Login extends javax.swing.JFrame {
+public class Login   extends javax.swing.JFrame {
 
     /**
      * Creates new form Login
-     */
+     */ Connection _connect = null;
+    Statement _sql_statment = null;
     public Login() {
-        initComponents();
+        initComponents(); try {
+			Class.forName("com.mysql.jdbc.Driver");
+			_connect =  DriverManager.getConnection("jdbc:mysql://localhost/oop" +
+					"?user=root&password=");
+
+			if(_connect != null){
+				System.out.println("Database Connected.");
+			} else {
+				System.out.println("Database Connect Failed.");
+			}
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+                        System.out.println(e.toString());
+		}
     }
 
     /**
@@ -60,7 +85,11 @@ public class Login extends javax.swing.JFrame {
         JLogin.setText("Login");
         JLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JLoginActionPerformed(evt);
+                try {
+                    JLoginActionPerformed(evt);
+                } catch (SQLException ex) {
+                    Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
 
@@ -131,8 +160,52 @@ public class Login extends javax.swing.JFrame {
         setVisible(false);
     }                                        
 
-    private void JLoginActionPerformed(java.awt.event.ActionEvent evt) {                                       
-        // TODO add your handling code here:
+    private void JLoginActionPerformed(java.awt.event.ActionEvent evt) throws SQLException {                                       
+        // TODO add your handling code here: try{
+           
+         try{
+            if(Jtelephone.getText().equals("")||Jtelephone.getText().length()!=10){  TEXT.setText("please enter telephone");
+
+           
+      
+         }else{ 
+                _sql_statment = _connect.createStatement();
+            String sql_commnad = "SELECT *, SUM(pointmember)  FROM datachicken WHERE telephone='"+Jtelephone.getText()+"' ";
+            
+            ResultSet rs = _sql_statment.executeQuery(sql_commnad);
+            if(rs.next()){
+              
+                String firstname = rs.getString("firstname");
+               
+                    int totalpoint = rs.getInt("SUM(pointmember)");
+                    
+                    
+                System.out.println("Found data: "+"   "+"Name:  "+firstname +"  Phone:  "+ "  point:  "+ totalpoint);
+                
+                 Member jmember = new Member();
+                  jmember.Jlabelname.setText(firstname);
+                 jmember.jLabelpoint.setText(String.format("%d",totalpoint));
+            
+                 
+        jmember.setVisible(true);
+            
+        setVisible(false); 
+            }
+            
+            
+            else{
+              TEXT.setText("Not found use");
+               
+            }}
+          
+  
+            
+            
+            
+            
+        }catch(Exception ex){
+            System.out.println(ex.toString());
+        }  
     }                                      
 
     private void JRegisterActionPerformed(java.awt.event.ActionEvent evt) {                                          
