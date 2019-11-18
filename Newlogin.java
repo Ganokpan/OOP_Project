@@ -170,22 +170,24 @@ public class Login   extends javax.swing.JFrame {
       
          }else{ 
                 _sql_statment = _connect.createStatement();
-            String sql_commnad = "SELECT *, SUM(pointmember)  FROM datachicken WHERE telephone='"+Jtelephone.getText()+"' ";
+            String sql_commnad = "SELECT *, SUM(pointmember)  FROM datachicken  WHERE telephone='"+Jtelephone.getText()+"' ";
             
             ResultSet rs = _sql_statment.executeQuery(sql_commnad);
             if(rs.next()){
               
                 String firstname = rs.getString("firstname");
-               
+               String telephone = rs.getString("telephone");
                     int totalpoint = rs.getInt("SUM(pointmember)");
-                    
+                     _sql_statment = _connect.createStatement();
+
+                  
                     
                 System.out.println("Found data: "+"   "+"Name:  "+firstname +"  Phone:  "+ "  point:  "+ totalpoint);
                 
                  Member jmember = new Member();
-                  jmember.Jlabelname.setText(firstname);
+                  jmember.Jlabelname1.setText(firstname);
                  jmember.jLabelpoint.setText(String.format("%d",totalpoint));
-            
+            jmember.phone.setText(telephone);
                  
         jmember.setVisible(true);
             
