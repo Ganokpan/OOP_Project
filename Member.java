@@ -1,11 +1,34 @@
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+
+  
+
 public class Member extends javax.swing.JFrame {
 
     /**
      * Creates new form Member
-     */
+     */  Connection _connect = null;
+    Statement _sql_statment = null;
     public Member() {
-        initComponents();
+        initComponents();try {
+            Class.forName("com.mysql.jdbc.Driver");
+            _connect = DriverManager.getConnection("jdbc:mysql://localhost/oop"
+                    + "?user=root&password=");
+
+            if (_connect != null) {
+                System.out.println("Database Connected.");
+            } else {
+                System.out.println("Database Connect Failed.");
+            }
+
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            System.out.println(e.toString());
+        }
     }
 
     /**
@@ -476,14 +499,28 @@ public class Member extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Home1 home = new Home1();
+        NewHome home = new NewHome();
         home.setVisible(true);
 
         setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        //ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
+          try {
+
+                    _sql_statment = _connect.createStatement();
+
+                    String sql_commnad = "INSERT INTO datachicken (friedchicken,cheesechicken,spicychicken,nuggets,frenchfries,berger,coke,pepsi,drink,total,pointmember,firstname,telephone) VALUES ( '" + NumchickenMem.getText() + "','" + NumchickenChesmem.getText() + "','" + chickenZEEDmem.getText() + "','" + NuggetsMem.getText() + "','" + FrenchfriesMem.getText() + "','" + BurgerMem.getText() + "','" + Colamem.getText() + "','" + jTextField8.getText() + "','" + jTextField9.getText() + "','" + jTextField10.getText() + "','" + jTextField10.getText() + "','" + Jlabelname1.getText() + "','" + phone.getText() + "') ";
+                    _sql_statment.execute(sql_commnad);
+                    System.out.println("save data complete");
+
+                } catch (Exception ex) {
+                    System.out.println(ex.toString());
+                    System.out.println("noooooooo data");
+                }
+
+
+//ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
         //checkpro pro = new checkpro();
         //pro.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
