@@ -1,10 +1,18 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
+/**
+ *
+ * @author User
+ */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
-
-
-  
+import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 public class Member extends javax.swing.JFrame {
 
@@ -262,7 +270,7 @@ public class Member extends javax.swing.JFrame {
                     if((jTextField8 .getText()).equals("")){
                         Num8 = 0;
                     }else if(!(jTextField8 .getText()).equals("")){
-                        int Num = Integer.parseInt(jTextField9.getText());
+                        int Num = Integer.parseInt(jTextField8.getText());
                         Num8 = Num*40;
                         point += 30;
                     }    
@@ -276,11 +284,16 @@ public class Member extends javax.swing.JFrame {
                     }    
                 }
                 
+                
+                
                 int total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
                 jTextField10.setText(total+" ");
                 jTextField11.setText(point+" ");
+               
             }
+            
         });
+        
         
         jTextField10.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
         jTextField10.setPreferredSize(new java.awt.Dimension(6, 22));
@@ -299,6 +312,9 @@ public class Member extends javax.swing.JFrame {
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
+                if(Integer.parseInt(jLabelpoint.getText()) >= 300){
+                    new checkpro().initComponents();
+                }
             }
         });
 
@@ -312,11 +328,12 @@ public class Member extends javax.swing.JFrame {
         phone.setText("0945555555");
 
         jLabelpoint.setFont(new java.awt.Font("Angsana New", 0, 18)); // NOI18N
-        jLabelpoint.setText("***แต้ม");
+        jLabelpoint.setText("0");
 
         Jlabelname1.setFont(new java.awt.Font("Angsana New", 0, 18)); // NOI18N
         Jlabelname1.setText("ประกาศิต บริบูรณ์-----");
-
+        
+        
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -497,9 +514,19 @@ public class Member extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+    
+    /*public int setPrice(int price){
+        int total = Integer.parseInt(jTextField10.getText());
+        return total;  
+    }
+
+    public int getPrice() {
+        int total = Integer.parseInt(jTextField10.getText());
+        return total;
+    }*/
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        NewHome home = new NewHome();
+        Home home = new Home();
         home.setVisible(true);
 
         setVisible(false);
@@ -520,9 +547,9 @@ public class Member extends javax.swing.JFrame {
                 }
 
 
-//ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
-        //checkpro pro = new checkpro();
-        //pro.setVisible(true);
+    //ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
+        checkpro pro = new checkpro();
+        pro.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

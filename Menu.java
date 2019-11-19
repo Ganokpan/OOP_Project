@@ -20,10 +20,13 @@ public class Menu extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
-     */Connection _connect = null;
+     */
+    Connection _connect = null;
     Statement _sql_statment = null;
+
     public Menu() {
-        initComponents(); try {
+        initComponents();
+        try {
             Class.forName("com.mysql.jdbc.Driver");
             _connect = DriverManager.getConnection("jdbc:mysql://localhost/oop"
                     + "?user=root&password=");
@@ -209,74 +212,82 @@ public class Menu extends javax.swing.JFrame {
                 int Num7 = 0;
                 int Num8 = 0;
                 int Num9 = 0;
-              
-                if((Numchicken.getText()).equals("") || !(Numchicken.getText()).equals("")){
-                    if((Numchicken.getText()).equals("")){
+
+                if ((Numchicken.getText()).equals("") || !(Numchicken.getText()).equals("")) {
+                    if ((Numchicken.getText()).equals("")) {
                         Num1 = 0;
-                    }else if(!(Numchicken.getText()).equals("")){
+                    } else if (!(Numchicken.getText()).equals("")) {
                         int Num = Integer.parseInt(Numchicken.getText());
-                        Num1 = Num*60;
-                    }    
-                }if((chickenCheese.getText()).equals("") || !(chickenCheese.getText()).equals("")){
-                    if((chickenCheese.getText()).equals("")){
-                        Num2 = 0;
-                    }else if(!(chickenCheese.getText()).equals("")){
-                        int Num = Integer.parseInt(chickenCheese.getText());
-                        Num2 = Num*100;
-                    }    
-                }if((chickenZEED.getText()).equals("") || !(chickenZEED.getText()).equals("")){
-                    if((chickenZEED.getText()).equals("")){
-                        Num3 = 0;
-                    }else if(!(chickenZEED.getText()).equals("")){
-                        int Num = Integer.parseInt(chickenZEED.getText());
-                        Num3 = Num*80;
-                    }    
-                }if((Nuggets.getText()).equals("") || !(Nuggets.getText()).equals("")){
-                    if((Nuggets.getText()).equals("")){
-                        Num4 = 0;
-                    }else if(!(Nuggets.getText()).equals("")){
-                        int Num = Integer.parseInt(Nuggets.getText());
-                        Num4 = Num*35;
-                    }    
-                }if((Frenchfries.getText()).equals("") || !(Frenchfries.getText()).equals("")){
-                    if((Frenchfries.getText()).equals("")){
-                        Num5 = 0;
-                    }else if(!(Frenchfries.getText()).equals("")){
-                        int Num = Integer.parseInt(Frenchfries.getText());
-                        Num5 = Num*45;
-                    }    
-                }if((Burger.getText()).equals("") || !(Burger.getText()).equals("")){
-                    if((Burger.getText()).equals("")){
-                        Num6 = 0;
-                    }else if(!(Burger.getText()).equals("")){
-                        int Num = Integer.parseInt(Burger.getText());
-                        Num6 = Num*79;
-                    }    
-                }if((Cola.getText()).equals("") || !(Cola.getText()).equals("")){
-                    if((Cola.getText()).equals("")){
-                        Num7 = 0;
-                    }else if(!(Cola.getText()).equals("")){
-                        int Num = Integer.parseInt(Cola.getText());
-                        Num7 = Num*40;
-                    }    
-                }if((jTextField9.getText()).equals("") || !(jTextField9.getText()).equals("")){
-                    if((jTextField9.getText()).equals("")){
-                        Num8 = 0;
-                    }else if(!(jTextField9.getText()).equals("")){
-                        int Num = Integer.parseInt(jTextField9.getText());
-                        Num8 = Num*40;
-                    }    
-                }if((jTextField10.getText()).equals("") || !(jTextField10.getText()).equals("")){
-                    if((jTextField10.getText()).equals("")){
-                        Num9 = 0;
-                    }else if(!(jTextField10.getText()).equals("")){
-                        int Num = Integer.parseInt(jTextField10.getText());
-                        Num9 = Num*15;
-                    }    
+                        Num1 = Num * 60;
+                    }
                 }
-                
-                int total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7+Num8+Num9;
-                jTextField1.setText(total+" ");
+                if ((chickenCheese.getText()).equals("") || !(chickenCheese.getText()).equals("")) {
+                    if ((chickenCheese.getText()).equals("")) {
+                        Num2 = 0;
+                    } else if (!(chickenCheese.getText()).equals("")) {
+                        int Num = Integer.parseInt(chickenCheese.getText());
+                        Num2 = Num * 100;
+                    }
+                }
+                if ((chickenZEED.getText()).equals("") || !(chickenZEED.getText()).equals("")) {
+                    if ((chickenZEED.getText()).equals("")) {
+                        Num3 = 0;
+                    } else if (!(chickenZEED.getText()).equals("")) {
+                        int Num = Integer.parseInt(chickenZEED.getText());
+                        Num3 = Num * 80;
+                    }
+                }
+                if ((Nuggets.getText()).equals("") || !(Nuggets.getText()).equals("")) {
+                    if ((Nuggets.getText()).equals("")) {
+                        Num4 = 0;
+                    } else if (!(Nuggets.getText()).equals("")) {
+                        int Num = Integer.parseInt(Nuggets.getText());
+                        Num4 = Num * 35;
+                    }
+                }
+                if ((Frenchfries.getText()).equals("") || !(Frenchfries.getText()).equals("")) {
+                    if ((Frenchfries.getText()).equals("")) {
+                        Num5 = 0;
+                    } else if (!(Frenchfries.getText()).equals("")) {
+                        int Num = Integer.parseInt(Frenchfries.getText());
+                        Num5 = Num * 45;
+                    }
+                }
+                if ((Burger.getText()).equals("") || !(Burger.getText()).equals("")) {
+                    if ((Burger.getText()).equals("")) {
+                        Num6 = 0;
+                    } else if (!(Burger.getText()).equals("")) {
+                        int Num = Integer.parseInt(Burger.getText());
+                        Num6 = Num * 79;
+                    }
+                }
+                if ((Cola.getText()).equals("") || !(Cola.getText()).equals("")) {
+                    if ((Cola.getText()).equals("")) {
+                        Num7 = 0;
+                    } else if (!(Cola.getText()).equals("")) {
+                        int Num = Integer.parseInt(Cola.getText());
+                        Num7 = Num * 40;
+                    }
+                }
+                if ((jTextField9.getText()).equals("") || !(jTextField9.getText()).equals("")) {
+                    if ((jTextField9.getText()).equals("")) {
+                        Num8 = 0;
+                    } else if (!(jTextField9.getText()).equals("")) {
+                        int Num = Integer.parseInt(jTextField9.getText());
+                        Num8 = Num * 40;
+                    }
+                }
+                if ((jTextField10.getText()).equals("") || !(jTextField10.getText()).equals("")) {
+                    if ((jTextField10.getText()).equals("")) {
+                        Num9 = 0;
+                    } else if (!(jTextField10.getText()).equals("")) {
+                        int Num = Integer.parseInt(jTextField10.getText());
+                        Num9 = Num * 15;
+                    }
+                }
+
+                int total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
+                jTextField1.setText(total + " ");
             }
         });
 
@@ -449,7 +460,7 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        NewHome home = new NewHome();
+        Home home = new Home();
         home.setVisible(true);
 
         setVisible(false);
@@ -457,18 +468,18 @@ public class Menu extends javax.swing.JFrame {
     //ยืนยันคำสั่งซื้อ
 
     public void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-  try {
+        try {
 
-                    _sql_statment = _connect.createStatement();
+            _sql_statment = _connect.createStatement();
 
-                    String sql_commnad = "INSERT INTO datachicken (friedchicken,cheesechicken,spicychicken,nuggets,frenchfries,berger,coke,pepsi,drink,total) VALUES ( '" + Numchicken.getText() + "','" + chickenCheese.getText() + "','" + chickenZEED.getText() + "','" + Nuggets.getText() + "','" + Frenchfries.getText() + "','" + Burger.getText() + "','" + Cola.getText() + "','" + jTextField9.getText() + "','" + jTextField10.getText() + "','" + jTextField1.getText() + "')  ";
-                    _sql_statment.execute(sql_commnad);
-                    System.out.println("save data complete");
+            String sql_commnad = "INSERT INTO datachicken (friedchicken,cheesechicken,spicychicken,nuggets,frenchfries,berger,coke,pepsi,drink,total) VALUES ( '" + Numchicken.getText() + "','" + chickenCheese.getText() + "','" + chickenZEED.getText() + "','" + Nuggets.getText() + "','" + Frenchfries.getText() + "','" + Burger.getText() + "','" + Cola.getText() + "','" + jTextField9.getText() + "','" + jTextField10.getText() + "','" + jTextField1.getText() + "')  ";
+            _sql_statment.execute(sql_commnad);
+            System.out.println("save data complete");
 
-                } catch (Exception ex) {
-                    System.out.println(ex.toString());
-                    System.out.println("noooooooo data");
-                }
+        } catch (Exception ex) {
+            System.out.println(ex.toString());
+            System.out.println("noooooooo data");
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     public void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
