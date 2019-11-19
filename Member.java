@@ -550,6 +550,7 @@ public class Member extends javax.swing.JFrame {
     //ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
         checkpro pro = new checkpro();
         pro.setVisible(true);
+            pro.point.setText(jLabelpoint.getText());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
