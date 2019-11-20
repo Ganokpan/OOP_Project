@@ -48,7 +48,7 @@ public class checkpro extends javax.swing.JFrame {
         jLabel4.setText("หากคุณใช้");
 
         jLabel5.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
-        jLabel5.setText("50");
+        jLabel5.setText("5");
 
         jLabel6.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
         jLabel6.setText("%");
@@ -56,31 +56,32 @@ public class checkpro extends javax.swing.JFrame {
         yes.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
         yes.setText("ใช้");
         yes.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                //yesActionPerformed(evt); 
                 Member price = new Member();
-                int cast = Integer.parseInt(price.jTextField10.getText());
-                Member mem = new Member();
-                int point = Integer.parseInt(mem.jTextField10.getText());
-                if (point >= 300) {
-                    if (point >= 300 && point < 500) {
-                        int p1 = (5 / 100) * cast;
-                        int total = cast - p1;
-                        succesMember allpoint = new succesMember();
-                        allpoint.pointused.setText("300");
-                        succesMember allprice = new succesMember();
-                        allprice.pointUsed.setText(p1+"");
-                        succesMember alltotal = new succesMember();
-                        alltotal.price.setText(total+"");
-                    } else if (point >= 500) {
-                        int p1 = (10 / 100) * cast;
-                        int total = cast - p1;
-                        succesMember allpoint = new succesMember();
-                        allpoint.pointused.setText("500");
-                        succesMember alltotal = new succesMember();
-                        alltotal.price.setText(total+"");
+                int i = Integer.parseInt(price.jTextField10.getText());
+                int j = Integer.parseInt(point.getText());
+                if (j >= 300) {
+                    if (j >= 300 && j < 500) {
+                        double p1 = 0.05 * i;
+                        double total = i - p1;
+                        succesMember all = new succesMember();
+                        all.pointused.setText("300");
+                        all.pointUsed.setText(p1+"");
+                        all.price.setText(total+"");
+                        System.out.println(total);
+                    } else if (j >= 500) {
+                        double p1 = 0.1 * i;
+                        double total = i - p1;
+                        succesMember all = new succesMember();
+                        all.pointused.setText("500");
+                        all.pointUsed.setText(p1+"");
+                        all.price.setText(total+"");
                     }
                 }
+                
+                yesActionPerformed(evt);
+                //new succesMember().initComponents();
             }
         });
 
@@ -89,6 +90,11 @@ public class checkpro extends javax.swing.JFrame {
         no.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 noActionPerformed(evt);
+                Member price = new Member();
+                String total = price.jTextField10.getText();
+                
+                succesMember alltotal = new succesMember();
+                alltotal.price.setText(total+"");
             }
         });
 
