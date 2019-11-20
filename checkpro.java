@@ -12,6 +12,8 @@ public class checkpro extends javax.swing.JFrame {
     public checkpro() {
         initComponents();
     }
+    int price;
+    int points;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -59,27 +61,25 @@ public class checkpro extends javax.swing.JFrame {
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Member price = new Member();
-                int i = Integer.parseInt(price.jTextField10.getText());
+                int i = price.total;
                 int j = Integer.parseInt(point.getText());
                 if (j >= 300) {
                     if (j >= 300 && j < 500) {
                         double p1 = 0.05 * i;
-                        double total = i - p1;
+                        double total1 = i - p1;
                         succesMember all = new succesMember();
                         all.pointused.setText("300");
-                        all.pointUsed.setText(p1+"");
-                        all.price.setText(total+"");
-                        System.out.println(total);
+                        all.pointUsed.setText(p1+" ");
+                        all.price.setText(total1+" ");
                     } else if (j >= 500) {
                         double p1 = 0.1 * i;
-                        double total = i - p1;
-                        succesMember all = new succesMember();
+                        double total1 = i - p1;
+                        /*succesMember all = new succesMember();
                         all.pointused.setText("500");
-                        all.pointUsed.setText(p1+"");
-                        all.price.setText(total+"");
+                        all.pointUsed.setText(p1 +" ");
+                        all.price.setText(total1 + " ");*/
                     }
                 }
-                
                 yesActionPerformed(evt);
                 //new succesMember().initComponents();
             }

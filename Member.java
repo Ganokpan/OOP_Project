@@ -31,8 +31,8 @@ public class Member extends javax.swing.JFrame {
     int Num7;
     int Num8;
     int Num9;
-    int total;
-    int point;
+    static int total;
+    static int point;
     public Member() {
         initComponents();
         try {
@@ -211,101 +211,136 @@ public class Member extends javax.swing.JFrame {
         jButton1.setMinimumSize(new java.awt.Dimension(61, 31));
         jButton1.setPreferredSize(new java.awt.Dimension(61, 31));
 
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            @Override
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                if ((NumchickenMem.getText()).equals("") || !(NumchickenMem.getText()).equals("")) {
-                    if ((NumchickenMem.getText()).equals("")) {
+        jButton1.addActionListener((java.awt.event.ActionEvent evt) -> {
+            if ((NumchickenMem.getText()).equals("") || !(NumchickenMem.getText()).equals("")) {
+                if ((NumchickenMem.getText()).equals("")) {
+                    Num1 = 0;
+                } else if (!(NumchickenMem.getText()).equals("")) {
+                    if((NumchickenMem.getText()).equals("0")){
                         Num1 = 0;
-                    } else if (!(NumchickenMem.getText()).equals("")) {
+                    }else{
                         int Num = Integer.parseInt(NumchickenMem.getText());
                         Num1 = Num * 60;
                         point += 30;
                     }
+                    
                 }
-                if ((NumchickenChesmem.getText()).equals("") || !(NumchickenChesmem.getText()).equals("")) {
-                    if ((NumchickenChesmem.getText()).equals("")) {
+            }
+            if ((NumchickenChesmem.getText()).equals("") || !(NumchickenChesmem.getText()).equals("")) {
+                if ((NumchickenChesmem.getText()).equals("")) {
+                    Num2 = 0;
+                } else if (!(NumchickenChesmem.getText()).equals("")) {
+                    if((NumchickenChesmem.getText()).equals("0")){
                         Num2 = 0;
-                    } else if (!(NumchickenChesmem.getText()).equals("")) {
+                    }else{
                         int Num = Integer.parseInt(NumchickenChesmem.getText());
                         Num2 = Num * 100;
                         point += 30;
                     }
                 }
-                if ((chickenZEEDmem.getText()).equals("") || !(chickenZEEDmem.getText()).equals("")) {
-                    if ((chickenZEEDmem.getText()).equals("")) {
+            }
+            if ((chickenZEEDmem.getText()).equals("") || !(chickenZEEDmem.getText()).equals("")) {
+                if ((chickenZEEDmem.getText()).equals("")) {
+                    Num3 = 0;
+                } else if (!(chickenZEEDmem.getText()).equals("")) {
+                    if((chickenZEEDmem.getText()).equals("0")){
                         Num3 = 0;
-                    } else if (!(chickenZEEDmem.getText()).equals("")) {
+                    }else{
                         int Num = Integer.parseInt(chickenZEEDmem.getText());
                         Num3 = Num * 80;
                         point += 30;
                     }
+                    
                 }
-                if ((NuggetsMem.getText()).equals("") || !(NuggetsMem.getText()).equals("")) {
-                    if ((NuggetsMem.getText()).equals("")) {
+            }
+            if ((NuggetsMem.getText()).equals("") || !(NuggetsMem.getText()).equals("")) {
+                if ((NuggetsMem.getText()).equals("")) {
+                    Num4 = 0;
+                } else if (!(NuggetsMem.getText()).equals("")) {
+                    if((NuggetsMem.getText()).equals("0")){
                         Num4 = 0;
-                    } else if (!(NuggetsMem.getText()).equals("")) {
+                    }else{
                         int Num = Integer.parseInt(NuggetsMem.getText());
                         Num4 = Num * 35;
                         point += 30;
                     }
                 }
-                if ((FrenchfriesMem.getText()).equals("") || !(FrenchfriesMem.getText()).equals("")) {
-                    if ((FrenchfriesMem.getText()).equals("")) {
+            }
+            if ((FrenchfriesMem.getText()).equals("") || !(FrenchfriesMem.getText()).equals("")) {
+                if ((FrenchfriesMem.getText()).equals("")) {
+                    Num5 = 0;
+                } else if (!(FrenchfriesMem.getText()).equals("")) {
+                    if((FrenchfriesMem.getText()).equals("0")){
                         Num5 = 0;
-                    } else if (!(FrenchfriesMem.getText()).equals("")) {
+                    }else{
                         int Num = Integer.parseInt(FrenchfriesMem.getText());
                         Num5 = Num * 45;
                         point += 30;
                     }
+                    
                 }
-                if ((BurgerMem.getText()).equals("") || !(BurgerMem.getText()).equals("")) {
-                    if ((BurgerMem.getText()).equals("")) {
+            }
+            if ((BurgerMem.getText()).equals("") || !(BurgerMem.getText()).equals("")) {
+                if ((BurgerMem.getText()).equals("")) {
+                    Num6 = 0;
+                } else if (!(BurgerMem.getText()).equals("")) {
+                    if((BurgerMem.getText()).equals("0")){
                         Num6 = 0;
-                    } else if (!(BurgerMem.getText()).equals("")) {
+                    }else{
                         int Num = Integer.parseInt(BurgerMem.getText());
                         Num6 = Num * 79;
                         point += 30;
                     }
+                    
                 }
-                if ((Colamem.getText()).equals("") || !(Colamem.getText()).equals("")) {
-                    if ((Colamem.getText()).equals("")) {
+            }
+            if ((Colamem.getText()).equals("") || !(Colamem.getText()).equals("")) {
+                if ((Colamem.getText()).equals("")) {
+                    Num7 = 0;
+                } else if (!(Colamem.getText()).equals("")) {
+                    if((Colamem.getText()).equals("0")){
                         Num7 = 0;
-                    } else if (!(Colamem.getText()).equals("")) {
+                    }else {
                         int Num = Integer.parseInt(Colamem.getText());
                         Num7 = Num * 40;
                         point += 30;
                     }
+                    
                 }
-                if ((jTextField8.getText()).equals("") || !(jTextField8.getText()).equals("")) {
-                    if ((jTextField8.getText()).equals("")) {
+            }
+            if ((jTextField8.getText()).equals("") || !(jTextField8.getText()).equals("")) {
+                if ((jTextField8.getText()).equals("")) {
+                    Num8 = 0;
+                } else if (!(jTextField8.getText()).equals("")) {
+                    if((jTextField8.getText()).equals("0")){
                         Num8 = 0;
-                    } else if (!(jTextField8.getText()).equals("")) {
+                    }else{
                         int Num = Integer.parseInt(jTextField8.getText());
                         Num8 = Num * 40;
                         point += 30;
                     }
+                    
                 }
-                if ((jTextField9.getText()).equals("") || !(jTextField9.getText()).equals("")) {
-                    if ((jTextField9.getText()).equals("")) {
+            }
+            if ((jTextField9.getText()).equals("") || !(jTextField9.getText()).equals("")) {
+                if ((jTextField9.getText()).equals("")) {
+                    Num9 = 0;
+                } else if (!(jTextField9.getText()).equals("")) {
+                    if((jTextField9.getText()).equals("0")){
                         Num9 = 0;
-                    } else if (!(jTextField9.getText()).equals("")) {
+                    }else{
                         int Num = Integer.parseInt(jTextField9.getText());
                         Num9 = Num * 15;
                         point += 30;
                     }
+                    
                 }
-
-                total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
-                jTextField10.setText(total + " ");
-                jTextField11.setText(point + " ");
-                
             }
 
+            total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
+            jTextField10.setText(total + " ");
+            jTextField11.setText(point + " ");
         });
-        
-        //jTextField10.setText(total + "");
-        //jTextField11.setText(point + "");
         
         jTextField10.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
         jTextField10.setPreferredSize(new java.awt.Dimension(6, 22));
