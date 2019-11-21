@@ -45,6 +45,7 @@ public class SuccesMem extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icons.png")));
         setUndecorated(true);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -55,7 +56,7 @@ public class SuccesMem extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(237, 171, 57));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("CordiaUPC", 1, 36)); // NOI18N
         jLabel3.setText("เช็คบิล");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -63,7 +64,7 @@ public class SuccesMem extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(167, 167, 167)
+                .addGap(158, 158, 158)
                 .addComponent(jLabel3)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -72,14 +73,14 @@ public class SuccesMem extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(jLabel3)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel6.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("CordiaUPC", 0, 24)); // NOI18N
         jLabel6.setText("แต้ม");
 
         jButton1.setBackground(new java.awt.Color(237, 171, 57));
-        jButton1.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
+        jButton1.setFont(new java.awt.Font("CordiaUPC", 0, 24)); // NOI18N
         jButton1.setText("จ่ายเงินเรียบร้อยแล้ว");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,32 +88,32 @@ public class SuccesMem extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("CordiaUPC", 0, 24)); // NOI18N
         jLabel1.setText("รายการอาหารทั้งหมดราคา");
 
-        price.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
+        price.setFont(new java.awt.Font("CordiaUPC", 0, 24)); // NOI18N
         price.setText("100000");
 
-        jLabel7.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("CordiaUPC", 0, 24)); // NOI18N
         jLabel7.setText("ลดราคา");
 
         pointused.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
         pointused.setText("300");
 
-        jLabel9.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("CordiaUPC", 0, 24)); // NOI18N
         jLabel9.setText("บาท");
 
-        pointUsed.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
+        pointUsed.setFont(new java.awt.Font("CordiaUPC", 0, 24)); // NOI18N
         pointUsed.setText("100");
 
-        jLabel4.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("CordiaUPC", 0, 24)); // NOI18N
         jLabel4.setText("ใช้แต้ม");
 
-        jLabel2.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("CordiaUPC", 0, 24)); // NOI18N
         jLabel2.setText("บาท");
 
         jLabel5.setBackground(new java.awt.Color(166, 164, 161));
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("CordiaUPC", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(166, 164, 161));
         jLabel5.setText("สั่งเพิ่ม");
         jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -132,14 +133,10 @@ public class SuccesMem extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(72, Short.MAX_VALUE)
+                .addContainerGap(69, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(price, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -149,7 +146,11 @@ public class SuccesMem extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel7)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(pointUsed)))
+                                .addComponent(pointUsed))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(4, 4, 4)
+                                .addComponent(price)))
                         .addGap(1, 1, 1)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
@@ -178,12 +179,12 @@ public class SuccesMem extends javax.swing.JFrame {
                     .addComponent(jLabel2))
                 .addGap(18, 18, 18)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addContainerGap())
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 280));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 280));
 
         pack();
         setLocationRelativeTo(null);
