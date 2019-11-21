@@ -263,7 +263,7 @@ public class Checkpro extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     public javax.swing.JButton noUsed;
     public javax.swing.JLabel point;
-    private javax.swing.JLabel telePhone;
+    public javax.swing.JLabel telePhone;
     public javax.swing.JLabel usepoint;
     // End of variables declaration//GEN-END:variables
 }
