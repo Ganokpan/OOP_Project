@@ -485,7 +485,7 @@ public class MenuUnMember extends javax.swing.JFrame {
                 }
 
                 int tota = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
-                total.setText(tota + " ");
+                price.setText(tota + " ");
             }
         });
 

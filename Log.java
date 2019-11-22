@@ -199,12 +199,12 @@ public Log() {
 
     private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
         try {
-            if (Jtelephone.getText().equals("") || Jtelephone.getText().length() != 10) {
+            if (jTextField1.getText().equals("") || jTextField1.getText().length() != 10) {
                 TEXT.setText("please enter telephone");
 
             } else {
                 _sql_statment = _connect.createStatement();
-                String sql_commnad = "SELECT *, SUM(pointmember)  FROM datachicken  WHERE telephone='" + Jtelephone.getText() + "' ";
+                String sql_commnad = "SELECT *, SUM(pointmember)  FROM datachicken  WHERE telephone='" + jTextField1.getText() + "' ";
 
                 ResultSet rs = _sql_statment.executeQuery(sql_commnad);
                 if (rs.next()) {
