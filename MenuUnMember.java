@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Projectdesign;
 
 import java.awt.Toolkit;
 import java.awt.*;
@@ -22,6 +21,10 @@ public class MenuUnMember extends javax.swing.JFrame {
     /**
      * Creates new form MenuUnMember
      */
+    static int total;
+    
+    Connection _connect = null;
+    Statement _sql_statment = null;
     public MenuUnMember() {
         initComponents();
         try {
@@ -440,6 +443,7 @@ public class MenuUnMember extends javax.swing.JFrame {
                     if ((Numnug.getText()).equals("")) {
                         Num4 = 0;
                     } else if (!(Numnug.getText()).equals("")) {
+                        int Num = Integer.parseInt(Numnug.getText());
                         Num4 = Num * 35;
                     }
                 }
@@ -484,8 +488,8 @@ public class MenuUnMember extends javax.swing.JFrame {
                     }
                 }
 
-                int tota = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
-                price.setText(tota + " ");
+                int total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
+                price.setText(total + " ");
             }
         });
 
@@ -597,10 +601,10 @@ public class MenuUnMember extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
         jLabel8.setText("รายการอาหารทั้งหมด");
-x
+
         price.setBackground(new java.awt.Color(207, 205, 204));
         price.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
-        price.setText("222222");
+        price.setText(total+"");
         price.setToolTipText("");
 
         jLabel30.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
@@ -616,7 +620,7 @@ x
 
             _sql_statment = _connect.createStatement();
 
-            String sql_commnad = "INSERT INTO datachicken (friedchicken,cheesechicken,spicychicken,nuggets,frenchfries,berger,coke,pepsi,drink,total) VALUES ( '" + Numchicken.getText() + "','" + chickenCheese.getText() + "','" + chickenZEED.getText() + "','" + Nuggets.getText() + "','" + Frenchfries.getText() + "','" + Burger.getText() + "','" + Cola.getText() + "','" + jTextField9.getText() + "','" + jTextField10.getText() + "','" + jTextField1.getText() + "')  ";
+            String sql_commnad = "INSERT INTO datachicken (friedchicken,cheesechicken,spicychicken,nuggets,frenchfries,berger,coke,pepsi,drink,total) VALUES ( '" + NumChick.getText() + "','" + NumcHeese.getText() + "','" + Numzeed.getText() + "','" + Numnug.getText() + "','" + NumPotato.getText() + "','" + NumBerGer.getText() + "','" + NumCOLA.getText() + "','" + NumPEPSI.getText() + "','" + NumWATER.getText() + "','" + price.getText() + "')  ";
             _sql_statment.execute(sql_commnad);
             System.out.println("save data complete");
 
@@ -762,7 +766,7 @@ x
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Projectdesign/menu.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("menu.png"))); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("CordiaUPC", 1, 36)); // NOI18N
         jLabel3.setText("รายการเครื่องดื่ม");

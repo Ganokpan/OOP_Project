@@ -8,7 +8,7 @@
  *
  * @author User
  */
-public class Meterial extends Stock{
+public class Meterial{
     public String matname;
     public int matbalance;
 

@@ -3,10 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Projectdesign;
 
-import OOPJFrame.Login;
-import OOPJFrame.Menu;
+//import OOPJFrame.Log;
+//import OOPJFrame.Men;
 import OOPJFrame.graph;
 import java.awt.Toolkit;
 
@@ -59,7 +58,7 @@ public class Home extends javax.swing.JFrame {
 
         jPanel5.setBackground(new java.awt.Color(237, 171, 57));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Projectdesign/chick2.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("chick2.png"))); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("CordiaUPC", 1, 48)); // NOI18N
         jLabel3.setText("รายการอาหาร");
@@ -104,7 +103,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Projectdesign/stock.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("stock.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -138,7 +137,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Projectdesign/graph.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("graph.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -184,7 +183,7 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Projectdesign/member.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("member.png"))); // NOI18N
 
         jLabel8.setBackground(new java.awt.Color(237, 171, 57));
         jLabel8.setFont(new java.awt.Font("Angsana New", 1, 24)); // NOI18N
@@ -197,7 +196,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Projectdesign/menu.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("menu.png"))); // NOI18N
 
         jLabel10.setBackground(new java.awt.Color(237, 171, 57));
         jLabel10.setFont(new java.awt.Font("Angsana New", 1, 48)); // NOI18N
@@ -310,6 +309,7 @@ public class Home extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new Home().setVisible(true);
             }
