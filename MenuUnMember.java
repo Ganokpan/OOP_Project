@@ -12,6 +12,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author User
@@ -125,7 +126,7 @@ public class MenuUnMember extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(237, 171, 57));
         jPanel2.setPreferredSize(new java.awt.Dimension(168, 48));
 
-        jLabel5.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N   
         jLabel5.setText("ไก่ทอด");
 
         jLabel6.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
@@ -405,6 +406,23 @@ public class MenuUnMember extends javax.swing.JFrame {
         NumPEPSI.addActionListener(new java.awt.event.ActionListener() {
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
+                
+            }
+        });
+
+        jLabel24.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
+        jLabel24.setText("จำนวน");
+
+        NumWATER.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
+
+        jLabel26.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
+        jLabel26.setText("จำนวน");
+
+        BntConfirm.setBackground(new java.awt.Color(242, 192, 85));
+        BntConfirm.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
+        BntConfirm.setText("ยืนยัน");
+        BntConfirm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 int Num1 = 0;
                 int Num2 = 0;
                 int Num3 = 0;
@@ -490,23 +508,6 @@ public class MenuUnMember extends javax.swing.JFrame {
 
                 int total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
                 price.setText(total + " ");
-            }
-        });
-
-        jLabel24.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
-        jLabel24.setText("จำนวน");
-
-        NumWATER.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
-
-        jLabel26.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
-        jLabel26.setText("จำนวน");
-
-        BntConfirm.setBackground(new java.awt.Color(242, 192, 85));
-        BntConfirm.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
-        BntConfirm.setText("ยืนยัน");
-        BntConfirm.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BntConfirmActionPerformed(evt);
             }
         });
 
@@ -628,6 +629,67 @@ public class MenuUnMember extends javax.swing.JFrame {
             System.out.println(ex.toString());
             System.out.println("noooooooo data");
         }
+                
+        SuccessNoMem Suc = new SuccessNoMem();
+        Suc.setVisible(true);
+        
+        
+        if (!(NumChick.getText()).equals("")) {
+            String data[] = {"ไก่ทอด",NumChick.getText(),"60",String.format("%d", (Integer.parseInt(NumChick.getText()))*60)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(NumcHeese.getText()).equals("")) {
+            String data[] = {"ไก่ชีส",NumcHeese.getText(),"100", String.format("%d", (Integer.parseInt(NumcHeese.getText()))*100)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Numzeed.getText()).equals("")) {
+            String data[] = {"ไก่วิ้งแซ่บ", Numzeed.getText(), "80",String.format("%d", (Integer.parseInt(Numzeed.getText()))*80)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Numnug.getText()).equals("")) {
+            String data[] = {"นักเก็ตส์", Numnug.getText(), "35",String.format("%d", (Integer.parseInt(Numnug.getText()))*35)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(NumPotato.getText()).equals("")) {
+            String data[] = {"เฟรนฟราย", NumPotato.getText(), "45",String.format("%d", (Integer.parseInt(NumPotato.getText()))*45)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(NumBerGer.getText()).equals("")) {
+            String data[] = {"เบอร์เกอร์ไก่ทอด", NumBerGer.getText(),"79", String.format("%d", (Integer.parseInt(NumBerGer.getText()))*79)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(NumCOLA.getText()).equals("")) {
+            String data[] = {"โค้ก", NumCOLA.getText(),"40", String.format("%d", (Integer.parseInt(NumCOLA.getText()))*40)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(NumPEPSI.getText()).equals("")) {
+            String data[] = {"เป๊ปซี่", NumPEPSI.getText(),"40", String.format("%d", (Integer.parseInt(NumPEPSI.getText()))*40)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(NumWATER.getText()).equals("")) {
+            String data[] = {"น้ำเปล่า", NumWATER.getText(),"15", String.format("%d", (Integer.parseInt(NumWATER.getText()))*15)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+         
+        Suc.price.setText(price.getText());
+        Suc.jTable1.setEnabled(false);
+        
+        Suc.jTable1.getColumnModel().getColumn(0).setPreferredWidth(200);
+        Suc.setResizable(false);
+        Suc.setVisible(true);
+        Suc.pack();
+        Suc.setLocationRelativeTo(null);
+        setVisible(false);        
+     
             }
         });
 
@@ -870,10 +932,7 @@ public class MenuUnMember extends javax.swing.JFrame {
     }//GEN-LAST:event_BntConfirmActionPerformed
 
     private void BtnSuccessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSuccessActionPerformed
-        SuccessNoMem nm = new SuccessNoMem();
-        nm.setVisible(true);
         
-        setVisible(false);
     }//GEN-LAST:event_BtnSuccessActionPerformed
 
     /**
