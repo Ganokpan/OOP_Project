@@ -799,8 +799,8 @@ public class MemMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify                     
-    javax.swing.JLabel Allpoint;
-    javax.swing.JLabel Name;
+    private javax.swing.JLabel Allpoint;
+    private javax.swing.JLabel Name;
     private javax.swing.JTextField NumBerger;
     private javax.swing.JTextField NumNug;
     private javax.swing.JTextField NumZeed;
@@ -810,7 +810,7 @@ public class MemMenu extends javax.swing.JFrame {
     private javax.swing.JTextField Numpepsi;
     private javax.swing.JTextField Numpotato;
     private javax.swing.JTextField Numwater;
-    javax.swing.JLabel Telephone1;
+    private javax.swing.JLabel Telephone1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
