@@ -73,7 +73,7 @@ public class home1 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Prestige Elite Std", 0, 18)); // NOI18N
         jLabel2.setText("   CHICKEN FRIED");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/menu_1.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/menu_1.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -109,7 +109,7 @@ public class home1 extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(234, 182, 106));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/menu (2).png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/menu (2).png"))); // NOI18N
 
         jButton1.setBackground(new java.awt.Color(234, 182, 106));
         jButton1.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
@@ -153,7 +153,7 @@ public class home1 extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(234, 182, 106));
         jPanel2.setPreferredSize(new java.awt.Dimension(231, 235));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/waiter.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/waiter.png"))); // NOI18N
 
         jButton2.setBackground(new java.awt.Color(234, 182, 106));
         jButton2.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
@@ -207,7 +207,7 @@ public class home1 extends javax.swing.JFrame {
             }
         });
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/box.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/box.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -249,7 +249,7 @@ public class home1 extends javax.swing.JFrame {
             }
         });
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/graph.png"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/graph.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);

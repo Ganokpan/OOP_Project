@@ -119,7 +119,7 @@ public class JStock2 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
         jLabel2.setText("ไก่ทอด");
 
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOPproject/stock1.png"))); // NOI18N
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/stock1.png"))); // NOI18N
         jLabel21.setText("jLabel16");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -183,7 +183,7 @@ public class JStock2 extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
         jLabel3.setText("ไก่ชีส");
 
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOPproject/stock2.png"))); // NOI18N
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/stock2.png"))); // NOI18N
         jLabel25.setText("jLabel16");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
@@ -246,7 +246,7 @@ public class JStock2 extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
         jLabel6.setText("เฟรนฟราย");
 
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOPproject/stock5.png"))); // NOI18N
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/stock5.png"))); // NOI18N
         jLabel23.setText("jLabel16");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
@@ -313,7 +313,7 @@ public class JStock2 extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
         jLabel5.setText("นักเก็ตส์");
 
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOPproject/stock4.png"))); // NOI18N
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/stock4.png"))); // NOI18N
         jLabel22.setText("jLabel16");
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
@@ -376,7 +376,7 @@ public class JStock2 extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
         jLabel8.setText("โค้ก");
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOPproject/stock7.png"))); // NOI18N
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/stock7.png"))); // NOI18N
         jLabel16.setText("jLabel16");
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
@@ -429,7 +429,7 @@ public class JStock2 extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
         jLabel9.setText("เป็ปซี่");
 
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOPproject/stock8.png"))); // NOI18N
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/stock8.png"))); // NOI18N
         jLabel24.setText("jLabel16");
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
@@ -495,7 +495,7 @@ public class JStock2 extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
         jLabel10.setText("น้ำเปล่า");
 
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOPproject/stock9.png"))); // NOI18N
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/stock9.png"))); // NOI18N
         jLabel28.setText("jLabel16");
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
@@ -563,7 +563,7 @@ public class JStock2 extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
         jLabel7.setText("เบอร์เกอร์ไก่");
 
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOPproject/stock6.png"))); // NOI18N
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/stock6.png"))); // NOI18N
         jLabel27.setText("jLabel16");
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
@@ -631,7 +631,7 @@ public class JStock2 extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
         jLabel4.setText("ไก่วิ้งแซ่บ");
 
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOPproject/stock3.png"))); // NOI18N
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OOP_Project-master/OOP_Project-master/picture/stock3.png"))); // NOI18N
         jLabel26.setText("jLabel16");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
