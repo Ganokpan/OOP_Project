@@ -592,7 +592,7 @@ public class Menu2 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         check ck = new check();
         ck.setVisible(true);
-        
+    
         setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -634,15 +634,15 @@ public class Menu2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Allpoint;
     private javax.swing.JLabel Name;
-    public javax.swing.JTextField NumBerger;
-    public javax.swing.JTextField NumNug;
-    public javax.swing.JTextField NumZeed;
-    public javax.swing.JTextField Numcheese;
-    public javax.swing.JTextField Numchick;
-    public javax.swing.JTextField Numcola;
-    public javax.swing.JTextField Numpepsi;
-    public javax.swing.JTextField Numpotato;
-    public javax.swing.JTextField Numwater;
+    public static javax.swing.JTextField NumBerger;
+    public static javax.swing.JTextField NumNug;
+    public static javax.swing.JTextField NumZeed;
+    public static javax.swing.JTextField Numcheese;
+    public static javax.swing.JTextField Numchick;
+    public static javax.swing.JTextField Numcola;
+    public static javax.swing.JTextField Numpepsi;
+    public static javax.swing.JTextField Numpotato;
+    public static javax.swing.JTextField Numwater;
     private javax.swing.JLabel Telephone1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

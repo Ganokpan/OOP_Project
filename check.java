@@ -1,9 +1,14 @@
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import javax.swing.table.DefaultTableModel;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author User
@@ -13,8 +18,30 @@ public class check extends javax.swing.JFrame {
     /**
      * Creates new form check
      */
+    Connection _connect = null;
+    Statement _sql_statment = null;
+
     public check() {
         initComponents();
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            _connect = DriverManager.getConnection("jdbc:mysql://localhost/oop"
+                    + "?user=root&password=");
+
+            if (_connect != null) {
+                System.out.println("Database Connected.");
+            } else {
+                System.out.println("Database Connect Failed.");
+            }
+
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            System.out.println(e.toString());
+
+        }
+        int price;
+        int points;
     }
 
     /**
@@ -171,15 +198,237 @@ public class check extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        suc1 sc = new suc1();//ไม่ใช้
-        sc.setVisible(true);
+        suc1 Suc = new suc1();//ไม่ใช้
+        Suc.setVisible(true);
+
+        if (!(Menu2.Numchick.getText()).equals("")) {
+            String data[] = {"ไก่ทอด", Menu2.Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Menu2.Numchick.getText())) * 60)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.Numcheese.getText()).equals("")) {
+            String data[] = {"ไก่ชีส", Menu2.Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Menu2.Numcheese.getText())) * 100)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.NumZeed.getText()).equals("")) {
+            String data[] = {"ไก่วิ้งแซ่บ", Menu2.NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(Menu2.NumZeed.getText())) * 80)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.NumNug.getText()).equals("")) {
+            String data[] = {"นักเก็ตส์", Menu2.NumNug.getText(), "35", String.format("%d", (Integer.parseInt(Menu2.NumNug.getText())) * 35)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.Numpotato.getText()).equals("")) {
+            String data[] = {"เฟรนฟราย", Menu2.Numpotato.getText(), "45", String.format("%d", (Integer.parseInt(Menu2.Numpotato.getText())) * 45)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.NumBerger.getText()).equals("")) {
+            String data[] = {"เบอร์เกอร์ไก่ทอด", Menu2.NumBerger.getText(), "79", String.format("%d", (Integer.parseInt(Menu2.NumBerger.getText())) * 79)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.Numcola.getText()).equals("")) {
+            String data[] = {"โค้ก", Menu2.Numcola.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numcola.getText())) * 40)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.Numpepsi.getText()).equals("")) {
+            String data[] = {"เป๊ปซี่", Menu2.Numpepsi.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numpepsi.getText())) * 40)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.Numwater.getText()).equals("")) {
+            String data[] = {"น้ำเปล่า", Menu2.Numwater.getText(), "15", String.format("%d", (Integer.parseInt(Menu2.Numwater.getText())) * 15)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+
+        Menu1 priceno = new Menu1();
+        String total2 = Double.toString(priceno.total);
+        Suc.price.setText(total2);
+        Suc.jTable1.setEnabled(false);
+
+        Suc.jTable1.getColumnModel().getColumn(0).setPreferredWidth(170);
+        Suc.setResizable(false);
+        Suc.setVisible(true);
+        Suc.pack();
+        Suc.setLocationRelativeTo(null);
+        setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        suc2 sc2 = new suc2();//ใช้
-        sc2.setVisible(true);
-        
-        setVisible(false);
+        suc2 Suc = new suc2();//ใช้
+        Suc.setVisible(true);
+
+        try {
+
+            Menu2 pricec = new Menu2();
+            int pd = -300;
+            int p = -500;
+            int i = pricec.total;
+            int j = Integer.parseInt(jLabel2.getText());
+            System.out.println(jLabel2.getText());
+            System.out.println(j);
+            if (j >= 300) {
+                if (j >= 300 && j < 500) {
+                    double p1 = 0.05 * i;
+                    double total1 = i - p1;
+                    _sql_statment = _connect.createStatement();
+
+                    String sql_commnad = "INSERT INTO datachicken (pointmember,firstname,telephone) VALUES ( '" + pd + "','" + Name1.getText() + "','" + telephone.getText() + "') ";
+                    _sql_statment.execute(sql_commnad);
+                    System.out.println("save data complete");
+                    //ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
+
+                    if (!(Menu2.Numchick.getText()).equals("")) {
+                        String data[] = {"ไก่ทอด", Menu2.Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Menu2.Numchick.getText())) * 60)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numcheese.getText()).equals("")) {
+                        String data[] = {"ไก่ชีส", Menu2.Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Menu2.Numcheese.getText())) * 100)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumZeed.getText()).equals("")) {
+                        String data[] = {"ไก่วิ้งแซ่บ", Menu2.NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(Menu2.NumZeed.getText())) * 80)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumNug.getText()).equals("")) {
+                        String data[] = {"นักเก็ตส์", Menu2.NumNug.getText(), "35", String.format("%d", (Integer.parseInt(Menu2.NumNug.getText())) * 35)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numpotato.getText()).equals("")) {
+                        String data[] = {"เฟรนฟราย", Menu2.Numpotato.getText(), "45", String.format("%d", (Integer.parseInt(Menu2.Numpotato.getText())) * 45)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumBerger.getText()).equals("")) {
+                        String data[] = {"เบอร์เกอร์ไก่ทอด", Menu2.NumBerger.getText(), "79", String.format("%d", (Integer.parseInt(Menu2.NumBerger.getText())) * 79)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numcola.getText()).equals("")) {
+                        String data[] = {"โค้ก", Menu2.Numcola.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numcola.getText())) * 40)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numpepsi.getText()).equals("")) {
+                        String data[] = {"เป๊ปซี่", Menu2.Numpepsi.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numpepsi.getText())) * 40)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numwater.getText()).equals("")) {
+                        String data[] = {"น้ำเปล่า", Menu2.Numwater.getText(), "15", String.format("%d", (Integer.parseInt(Menu2.Numwater.getText())) * 15)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+
+                    Suc.jTable2.setEnabled(false);
+
+                    Suc.jTable2.getColumnModel().getColumn(0).setPreferredWidth(170);
+                    Suc.setResizable(false);
+                    Suc.setVisible(true);
+                    Suc.pack();
+                    Suc.setLocationRelativeTo(null);
+
+
+                    Suc.pointused.setText("300");
+                    Suc.pointUsed.setText(p1 + " ");
+                    Suc.price.setText(total1 + " ");
+                    setVisible(false);
+                    System.out.println("ออกก300");
+
+                } else if (j >= 500) {
+                    double p1 = 0.1 * i;
+                    double total1 = i - p1;
+
+                    _sql_statment = _connect.createStatement();
+
+                    String sql_commnad = "INSERT INTO datachicken (pointmember,firstname,telephone) VALUES ( '" + p + "','" + Name1.getText() + "','" + telephone.getText() + "') ";
+                    _sql_statment.execute(sql_commnad);
+                    System.out.println("save data complete");
+                    //ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
+
+                    if (!(Menu2.Numchick.getText()).equals("")) {
+                        String data[] = {"ไก่ทอด", Menu2.Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Menu2.Numchick.getText())) * 60)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numcheese.getText()).equals("")) {
+                        String data[] = {"ไก่ชีส", Menu2.Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Menu2.Numcheese.getText())) * 100)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumZeed.getText()).equals("")) {
+                        String data[] = {"ไก่วิ้งแซ่บ", Menu2.NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(Menu2.NumZeed.getText())) * 80)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumNug.getText()).equals("")) {
+                        String data[] = {"นักเก็ตส์", Menu2.NumNug.getText(), "35", String.format("%d", (Integer.parseInt(Menu2.NumNug.getText())) * 35)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numpotato.getText()).equals("")) {
+                        String data[] = {"เฟรนฟราย", Menu2.Numpotato.getText(), "45", String.format("%d", (Integer.parseInt(Menu2.Numpotato.getText())) * 45)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumBerger.getText()).equals("")) {
+                        String data[] = {"เบอร์เกอร์ไก่ทอด", Menu2.NumBerger.getText(), "79", String.format("%d", (Integer.parseInt(Menu2.NumBerger.getText())) * 79)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numcola.getText()).equals("")) {
+                        String data[] = {"โค้ก", Menu2.Numcola.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numcola.getText())) * 40)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numpepsi.getText()).equals("")) {
+                        String data[] = {"เป๊ปซี่", Menu2.Numpepsi.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numpepsi.getText())) * 40)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numwater.getText()).equals("")) {
+                        String data[] = {"น้ำเปล่า", Menu2.Numwater.getText(), "15", String.format("%d", (Integer.parseInt(Menu2.Numwater.getText())) * 15)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+
+                    Suc.jTable2.setEnabled(false);
+
+                    Suc.jTable2.getColumnModel().getColumn(0).setPreferredWidth(170);
+                    Suc.setResizable(false);
+                    Suc.setVisible(true);
+                    Suc.pack();
+                    Suc.setLocationRelativeTo(null);
+
+                    
+                    System.out.println(total1);
+                    String pointt = "500";
+                    Suc.pointused.setText(pointt);
+                    Suc.pointUsed.setText(p1 + " ");
+                    Suc.setVisible(true);
+                    setVisible(false);
+                    Suc.price.setText(total1 + " ");
+                    System.out.println("ออกก500");
+
+                }
+            }
+
+        } catch (Exception ex) {
+            System.out.println(ex.toString());
+            System.out.println("noooooooo data");
+        }
+
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

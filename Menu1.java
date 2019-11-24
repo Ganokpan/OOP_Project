@@ -1,9 +1,11 @@
+
+import javax.swing.table.DefaultTableModel;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author User
@@ -556,9 +558,64 @@ public class Menu1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        suc1 sc = new suc1();//ส่งรายการอาหาร
-        sc.setVisible(true);
+        suc1 Suc = new suc1();//ส่งรายการอาหาร
+        Suc.setVisible(true);
+
+
+        if (!(Numchick.getText()).equals("")) {
+            String data[] = {"ไก่ทอด", Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Numchick.getText())) * 60)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Numcheese.getText()).equals("")) {
+            String data[] = {"ไก่ชีส", Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Numcheese.getText())) * 100)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(NumZeed.getText()).equals("")) {
+            String data[] = {"ไก่วิ้งแซ่บ", NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(NumZeed.getText())) * 80)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(NumNug.getText()).equals("")) {
+            String data[] = {"นักเก็ตส์", NumNug.getText(), "35", String.format("%d", (Integer.parseInt(NumNug.getText())) * 35)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Numpotato.getText()).equals("")) {
+            String data[] = {"เฟรนฟราย", Numpotato.getText(), "45", String.format("%d", (Integer.parseInt(Numpotato.getText())) * 45)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(NumBerger.getText()).equals("")) {
+            String data[] = {"เบอร์เกอร์ไก่ทอด", NumBerger.getText(), "79", String.format("%d", (Integer.parseInt(NumBerger.getText())) * 79)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Numcola.getText()).equals("")) {
+            String data[] = {"โค้ก", Numcola.getText(), "40", String.format("%d", (Integer.parseInt(Numcola.getText())) * 40)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Numpepsi.getText()).equals("")) {
+            String data[] = {"เป๊ปซี่", Numpepsi.getText(), "40", String.format("%d", (Integer.parseInt(Numpepsi.getText())) * 40)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Numwater.getText()).equals("")) {
+            String data[] = {"น้ำเปล่า", Numwater.getText(), "15", String.format("%d", (Integer.parseInt(Numwater.getText())) * 15)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+
+        Suc.jTable1.setEnabled(false);
         
+//        Suc.price.setText();
+        Suc.jTable1.getColumnModel().getColumn(0).setPreferredWidth(170);
+        Suc.setResizable(false);
+        Suc.setVisible(true);
+        Suc.pack();
+        Suc.setLocationRelativeTo(null);
         setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -646,15 +703,15 @@ public class Menu1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JTextField NumBerger;
-    public javax.swing.JTextField NumNug;
-    public javax.swing.JTextField NumZeed;
-    public javax.swing.JTextField Numcheese;
-    public javax.swing.JTextField Numchick;
-    public javax.swing.JTextField Numcola;
-    public javax.swing.JTextField Numpepsi;
-    public javax.swing.JTextField Numpotato;
-    public javax.swing.JTextField Numwater;
+    public static javax.swing.JTextField NumBerger;
+    public static javax.swing.JTextField NumNug;
+    public static javax.swing.JTextField NumZeed;
+    public static javax.swing.JTextField Numcheese;
+    public static javax.swing.JTextField Numchick;
+    public static javax.swing.JTextField Numcola;
+    public static javax.swing.JTextField Numpepsi;
+    public static javax.swing.JTextField Numpotato;
+    public static javax.swing.JTextField Numwater;
     public javax.swing.JButton jButton1;
     public javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
