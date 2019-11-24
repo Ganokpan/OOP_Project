@@ -29,6 +29,7 @@ public class Menu1 extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -77,6 +78,8 @@ public class Menu1 extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(218, 77, 79));
 
@@ -86,23 +89,39 @@ public class Menu1 extends javax.swing.JFrame {
         jLabel30.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
         jLabel30.setText("รายการอาหาร");
 
+        jLabel31.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel31.setText("<");
+        jLabel31.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel31MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(245, 245, 245)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jLabel30))
-                    .addComponent(jLabel29))
+                        .addGap(245, 245, 245)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabel30))
+                            .addComponent(jLabel29)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel31)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(65, 65, 65)
+                .addContainerGap()
+                .addComponent(jLabel31)
+                .addGap(36, 36, 36)
                 .addComponent(jLabel29)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel30)
@@ -168,6 +187,11 @@ public class Menu1 extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
         jButton1.setText("ยืนยัน");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
         jButton2.setText("ส่งรายการอาหาร");
@@ -246,6 +270,30 @@ public class Menu1 extends javax.swing.JFrame {
             }
         });
 
+        Numcheese.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NumcheeseActionPerformed(evt);
+            }
+        });
+
+        NumZeed.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NumZeedActionPerformed(evt);
+            }
+        });
+
+        Numpotato.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NumpotatoActionPerformed(evt);
+            }
+        });
+
+        NumBerger.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NumBergerActionPerformed(evt);
+            }
+        });
+
         NumNug.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NumNugActionPerformed(evt);
@@ -319,6 +367,7 @@ public class Menu1 extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jTextField1.setEnabled(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -344,6 +393,24 @@ public class Menu1 extends javax.swing.JFrame {
 
         jLabel22.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
         jLabel22.setText("15 บาท");
+
+        Numcola.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NumcolaActionPerformed(evt);
+            }
+        });
+
+        Numpepsi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NumpepsiActionPerformed(evt);
+            }
+        });
+
+        Numwater.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NumwaterActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -485,10 +552,14 @@ public class Menu1 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        suc1 sc = new suc1();//ส่งรายการอาหาร
+        sc.setVisible(true);
+        
+        setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void NumchickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumchickActionPerformed
@@ -502,6 +573,42 @@ public class Menu1 extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //ยืนยัน
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void NumcolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumcolaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NumcolaActionPerformed
+
+    private void NumpepsiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumpepsiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NumpepsiActionPerformed
+
+    private void NumwaterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumwaterActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NumwaterActionPerformed
+
+    private void NumcheeseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumcheeseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NumcheeseActionPerformed
+
+    private void NumZeedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumZeedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NumZeedActionPerformed
+
+    private void NumpotatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumpotatoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NumpotatoActionPerformed
+
+    private void NumBergerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumBergerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NumBergerActionPerformed
+
+    private void jLabel31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel31MouseClicked
+        setVisible(false);
+    }//GEN-LAST:event_jLabel31MouseClicked
 
     /**
      * @param args the command line arguments
@@ -539,17 +646,17 @@ public class Menu1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField NumBerger;
-    private javax.swing.JTextField NumNug;
-    private javax.swing.JTextField NumZeed;
-    private javax.swing.JTextField Numcheese;
-    private javax.swing.JTextField Numchick;
-    private javax.swing.JTextField Numcola;
-    private javax.swing.JTextField Numpepsi;
-    private javax.swing.JTextField Numpotato;
-    private javax.swing.JTextField Numwater;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    public javax.swing.JTextField NumBerger;
+    public javax.swing.JTextField NumNug;
+    public javax.swing.JTextField NumZeed;
+    public javax.swing.JTextField Numcheese;
+    public javax.swing.JTextField Numchick;
+    public javax.swing.JTextField Numcola;
+    public javax.swing.JTextField Numpepsi;
+    public javax.swing.JTextField Numpotato;
+    public javax.swing.JTextField Numwater;
+    public javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -574,6 +681,7 @@ public class Menu1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -587,6 +695,6 @@ public class Menu1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

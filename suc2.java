@@ -43,6 +43,8 @@ public class suc2 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(250, 236, 201));
 
@@ -56,6 +58,11 @@ public class suc2 extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
         jButton1.setText("กลับสู่หน้าหลัก");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
         jLabel5.setText("คุณได้ใช้แต้มสะสมไป");
@@ -186,7 +193,12 @@ public class suc2 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -227,8 +239,8 @@ public class suc2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
+    public javax.swing.JLabel jLabel11;
+    public javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -236,8 +248,8 @@ public class suc2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel pointUsed;
-    private javax.swing.JLabel pointused;
-    private javax.swing.JLabel price;
+    public javax.swing.JLabel pointUsed;
+    public javax.swing.JLabel pointused;
+    public javax.swing.JLabel price;
     // End of variables declaration//GEN-END:variables
 }

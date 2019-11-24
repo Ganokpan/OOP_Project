@@ -87,9 +87,16 @@ public class Menu2 extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setResizable(false);
 
         jButton1.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
         jButton1.setText("ยืนยัน");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jPanel8.setBackground(new java.awt.Color(234, 182, 106));
 
@@ -245,10 +252,16 @@ public class Menu2 extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
         jButton2.setText("ส่งรายการอาหาร");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
         jLabel1.setText("ราคาอาหารทั้งหมด");
 
+        jTextField1.setEnabled(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -453,6 +466,7 @@ public class Menu2 extends javax.swing.JFrame {
         jLabel31.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
         jLabel31.setText("แต้มสะสมที่ได้รับ");
 
+        jTextField11.setEnabled(false);
         jTextField11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField11ActionPerformed(evt);
@@ -552,6 +566,7 @@ public class Menu2 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void NumchickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumchickActionPerformed
@@ -569,6 +584,17 @@ public class Menu2 extends javax.swing.JFrame {
     private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField11ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // ยืนยัน
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        check ck = new check();
+        ck.setVisible(true);
+        
+        setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -608,15 +634,15 @@ public class Menu2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Allpoint;
     private javax.swing.JLabel Name;
-    private javax.swing.JTextField NumBerger;
-    private javax.swing.JTextField NumNug;
-    private javax.swing.JTextField NumZeed;
-    private javax.swing.JTextField Numcheese;
-    private javax.swing.JTextField Numchick;
-    private javax.swing.JTextField Numcola;
-    private javax.swing.JTextField Numpepsi;
-    private javax.swing.JTextField Numpotato;
-    private javax.swing.JTextField Numwater;
+    public javax.swing.JTextField NumBerger;
+    public javax.swing.JTextField NumNug;
+    public javax.swing.JTextField NumZeed;
+    public javax.swing.JTextField Numcheese;
+    public javax.swing.JTextField Numchick;
+    public javax.swing.JTextField Numcola;
+    public javax.swing.JTextField Numpepsi;
+    public javax.swing.JTextField Numpotato;
+    public javax.swing.JTextField Numwater;
     private javax.swing.JLabel Telephone1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -663,7 +689,7 @@ public class Menu2 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField11;
+    public javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jTextField11;
     // End of variables declaration//GEN-END:variables
 }
