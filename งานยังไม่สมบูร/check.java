@@ -2,13 +2,13 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import javax.swing.table.DefaultTableModel;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author User
@@ -17,10 +17,13 @@ public class check extends javax.swing.JFrame {
 
     /**
      * Creates new form check
-     */ Connection _connect = null;
+     */
+    Connection _connect = null;
     Statement _sql_statment = null;
+
     public check() {
-        initComponents();try {
+        initComponents();
+        try {
             Class.forName("com.mysql.jdbc.Driver");
             _connect = DriverManager.getConnection("jdbc:mysql://localhost/oop"
                     + "?user=root&password=");
@@ -35,10 +38,10 @@ public class check extends javax.swing.JFrame {
             // TODO Auto-generated catch block
             e.printStackTrace();
             System.out.println(e.toString());
-        
-    }
-    int price;
-    int points;
+
+        }
+        int price;
+        int points;
     }
 
     /**
@@ -53,17 +56,14 @@ public class check extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        pointused = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        percen = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        Name1 = new javax.swing.JLabel();
-        telephone = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -104,15 +104,6 @@ public class check extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
         jLabel8.setText("%");
 
-        Name1.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
-        Name1.setText("ชื่อ");
-
-        telephone.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
-        telephone.setText("เบอร์โทร");
-
-        jLabel2.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
-        jLabel2.setText("แต้ม");
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -121,11 +112,15 @@ public class check extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 130, Short.MAX_VALUE)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(pointused, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addGap(22, 22, 22)))
@@ -134,43 +129,25 @@ public class check extends javax.swing.JFrame {
                                 .addGap(28, 28, 28)
                                 .addComponent(jLabel3))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(percen, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jLabel8)
-                                .addGap(34, 34, 34))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 130, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28))))
+                                .addGap(6, 6, 6)))))
+                .addGap(28, 28, 28))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(118, 118, 118))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(Name1, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(telephone, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                .addComponent(jLabel6)
+                .addGap(118, 118, 118))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Name1)
-                    .addComponent(telephone))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addGap(3, 3, 3)
+                .addGap(39, 39, 39)
                 .addComponent(jLabel6)
                 .addGap(30, 30, 30)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(pointused, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -178,13 +155,13 @@ public class check extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4)
                             .addComponent(jLabel8))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(37, 37, 37))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(percen, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
@@ -221,76 +198,237 @@ public class check extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-         Menu1 priceno = new Menu1(); 
-               String total2 = Double.toString(priceno.total);
-                suc1 open = new suc1();
-               open.price.setText(total2);
-               
-                open.setVisible(true);setVisible(false);
-                  suc1 sucs = new suc1();
+        suc1 Suc = new suc1();//ไม่ใช้
+        Suc.setVisible(true);
+
+        if (!(Menu2.Numchick.getText()).equals("")) {
+            String data[] = {"ไก่ทอด", Menu2.Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Menu2.Numchick.getText())) * 60)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.Numcheese.getText()).equals("")) {
+            String data[] = {"ไก่ชีส", Menu2.Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Menu2.Numcheese.getText())) * 100)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.NumZeed.getText()).equals("")) {
+            String data[] = {"ไก่วิ้งแซ่บ", Menu2.NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(Menu2.NumZeed.getText())) * 80)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.NumNug.getText()).equals("")) {
+            String data[] = {"นักเก็ตส์", Menu2.NumNug.getText(), "35", String.format("%d", (Integer.parseInt(Menu2.NumNug.getText())) * 35)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.Numpotato.getText()).equals("")) {
+            String data[] = {"เฟรนฟราย", Menu2.Numpotato.getText(), "45", String.format("%d", (Integer.parseInt(Menu2.Numpotato.getText())) * 45)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.NumBerger.getText()).equals("")) {
+            String data[] = {"เบอร์เกอร์ไก่ทอด", Menu2.NumBerger.getText(), "79", String.format("%d", (Integer.parseInt(Menu2.NumBerger.getText())) * 79)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.Numcola.getText()).equals("")) {
+            String data[] = {"โค้ก", Menu2.Numcola.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numcola.getText())) * 40)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.Numpepsi.getText()).equals("")) {
+            String data[] = {"เป๊ปซี่", Menu2.Numpepsi.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numpepsi.getText())) * 40)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+        if (!(Menu2.Numwater.getText()).equals("")) {
+            String data[] = {"น้ำเปล่า", Menu2.Numwater.getText(), "15", String.format("%d", (Integer.parseInt(Menu2.Numwater.getText())) * 15)};
+            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+            tbm1.addRow(data);
+        }
+
+        Menu1 priceno = new Menu1();
+        String total2 = Double.toString(priceno.total);
+        Suc.price.setText(total2);
+        Suc.jTable1.setEnabled(false);
+
+        Suc.jTable1.getColumnModel().getColumn(0).setPreferredWidth(170);
+        Suc.setResizable(false);
+        Suc.setVisible(true);
+        Suc.pack();
+        Suc.setLocationRelativeTo(null);
+        setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       try {
-                      
-                          Menu2 pricec = new Menu2();
-                int pd = -300;
-                int p = -500;
-                int i = pricec.total;
-                int j = Integer.parseInt(jLabel2.getText());
-                System.out.println(jLabel2.getText());
-                System.out.println(j);
-                if (j >= 300) {
-                    if (j >= 300 && j < 500) {
-                        double p1 = 0.05 * i;
-                        double total1 = i - p1;
-                                 _sql_statment = _connect.createStatement();
+        suc2 Suc = new suc2();//ใช้
+        Suc.setVisible(true);
 
-            String sql_commnad = "INSERT INTO datachicken (pointmember,firstname,telephone) VALUES ( '" + pd + "','" + Name1.getText() + "','" + telephone.getText() + "') ";
-            _sql_statment.execute(sql_commnad);
-            System.out.println("save data complete");
-            //ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
- 
-                        suc2 all = new suc2();
-                        all.setVisible(true);
-                        all.pointused.setText("300");
-                        all.pointUsed.setText(p1+" ");
-                        all.price.setText(total1+" ");
-                        setVisible(false);
-                        System.out.println("ออกก300");
+        try {
 
-                      
-                    } else if (j >= 500) {
-                        double p1 = 0.1 * i;
-                        double total1 = i - p1;
-                      
-                                 _sql_statment = _connect.createStatement();
+            Menu2 pricec = new Menu2();
+            int pd = -300;
+            int p = -500;
+            int i = pricec.total;
+            int j = Integer.parseInt(jLabel2.getText());
+            System.out.println(jLabel2.getText());
+            System.out.println(j);
+            if (j >= 300) {
+                if (j >= 300 && j < 500) {
+                    double p1 = 0.05 * i;
+                    double total1 = i - p1;
+                    _sql_statment = _connect.createStatement();
 
-            String sql_commnad = "INSERT INTO datachicken (pointmember,firstname,telephone) VALUES ( '" + p + "','" + Name1.getText() + "','" + telephone.getText() + "') ";
-            _sql_statment.execute(sql_commnad);
-            System.out.println("save data complete");
-            //ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
- 
-                        System.out.println(total1);
-                        suc2 all = new suc2();
-                        String pointt = "500";
-                        all.pointused.setText(pointt);
-                        all.pointUsed.setText(p1 +" ");
-                          all.setVisible(true);setVisible(false);
-                        all.price.setText(total1 + " ");
-                        System.out.println("ออกก500");
-                        
+                    String sql_commnad = "INSERT INTO datachicken (pointmember,firstname,telephone) VALUES ( '" + pd + "','" + Name1.getText() + "','" + telephone.getText() + "') ";
+                    _sql_statment.execute(sql_commnad);
+                    System.out.println("save data complete");
+                    //ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
+
+                    if (!(Menu2.Numchick.getText()).equals("")) {
+                        String data[] = {"ไก่ทอด", Menu2.Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Menu2.Numchick.getText())) * 60)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
                     }
-                }
-               
+                    if (!(Menu2.Numcheese.getText()).equals("")) {
+                        String data[] = {"ไก่ชีส", Menu2.Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Menu2.Numcheese.getText())) * 100)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumZeed.getText()).equals("")) {
+                        String data[] = {"ไก่วิ้งแซ่บ", Menu2.NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(Menu2.NumZeed.getText())) * 80)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumNug.getText()).equals("")) {
+                        String data[] = {"นักเก็ตส์", Menu2.NumNug.getText(), "35", String.format("%d", (Integer.parseInt(Menu2.NumNug.getText())) * 35)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numpotato.getText()).equals("")) {
+                        String data[] = {"เฟรนฟราย", Menu2.Numpotato.getText(), "45", String.format("%d", (Integer.parseInt(Menu2.Numpotato.getText())) * 45)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumBerger.getText()).equals("")) {
+                        String data[] = {"เบอร์เกอร์ไก่ทอด", Menu2.NumBerger.getText(), "79", String.format("%d", (Integer.parseInt(Menu2.NumBerger.getText())) * 79)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numcola.getText()).equals("")) {
+                        String data[] = {"โค้ก", Menu2.Numcola.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numcola.getText())) * 40)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numpepsi.getText()).equals("")) {
+                        String data[] = {"เป๊ปซี่", Menu2.Numpepsi.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numpepsi.getText())) * 40)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numwater.getText()).equals("")) {
+                        String data[] = {"น้ำเปล่า", Menu2.Numwater.getText(), "15", String.format("%d", (Integer.parseInt(Menu2.Numwater.getText())) * 15)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
 
-     
-            
-      
+                    Suc.jTable2.setEnabled(false);
+
+                    Suc.jTable2.getColumnModel().getColumn(0).setPreferredWidth(170);
+                    Suc.setResizable(false);
+                    Suc.setVisible(true);
+                    Suc.pack();
+                    Suc.setLocationRelativeTo(null);
+
+
+                    Suc.pointused.setText("300");
+                    Suc.pointUsed.setText(p1 + " ");
+                    Suc.price.setText(total1 + " ");
+                    setVisible(false);
+                    System.out.println("ออกก300");
+
+                } else if (j >= 500) {
+                    double p1 = 0.1 * i;
+                    double total1 = i - p1;
+
+                    _sql_statment = _connect.createStatement();
+
+                    String sql_commnad = "INSERT INTO datachicken (pointmember,firstname,telephone) VALUES ( '" + p + "','" + Name1.getText() + "','" + telephone.getText() + "') ";
+                    _sql_statment.execute(sql_commnad);
+                    System.out.println("save data complete");
+                    //ถ้าแต้มถึงให้ลิงค์ไปหน้าcheckpro
+
+                    if (!(Menu2.Numchick.getText()).equals("")) {
+                        String data[] = {"ไก่ทอด", Menu2.Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Menu2.Numchick.getText())) * 60)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numcheese.getText()).equals("")) {
+                        String data[] = {"ไก่ชีส", Menu2.Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Menu2.Numcheese.getText())) * 100)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumZeed.getText()).equals("")) {
+                        String data[] = {"ไก่วิ้งแซ่บ", Menu2.NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(Menu2.NumZeed.getText())) * 80)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumNug.getText()).equals("")) {
+                        String data[] = {"นักเก็ตส์", Menu2.NumNug.getText(), "35", String.format("%d", (Integer.parseInt(Menu2.NumNug.getText())) * 35)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numpotato.getText()).equals("")) {
+                        String data[] = {"เฟรนฟราย", Menu2.Numpotato.getText(), "45", String.format("%d", (Integer.parseInt(Menu2.Numpotato.getText())) * 45)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.NumBerger.getText()).equals("")) {
+                        String data[] = {"เบอร์เกอร์ไก่ทอด", Menu2.NumBerger.getText(), "79", String.format("%d", (Integer.parseInt(Menu2.NumBerger.getText())) * 79)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numcola.getText()).equals("")) {
+                        String data[] = {"โค้ก", Menu2.Numcola.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numcola.getText())) * 40)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numpepsi.getText()).equals("")) {
+                        String data[] = {"เป๊ปซี่", Menu2.Numpepsi.getText(), "40", String.format("%d", (Integer.parseInt(Menu2.Numpepsi.getText())) * 40)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+                    if (!(Menu2.Numwater.getText()).equals("")) {
+                        String data[] = {"น้ำเปล่า", Menu2.Numwater.getText(), "15", String.format("%d", (Integer.parseInt(Menu2.Numwater.getText())) * 15)};
+                        DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable2.getModel();
+                        tbm1.addRow(data);
+                    }
+
+                    Suc.jTable2.setEnabled(false);
+
+                    Suc.jTable2.getColumnModel().getColumn(0).setPreferredWidth(170);
+                    Suc.setResizable(false);
+                    Suc.setVisible(true);
+                    Suc.pack();
+                    Suc.setLocationRelativeTo(null);
+
+                    
+                    System.out.println(total1);
+                    String pointt = "500";
+                    Suc.pointused.setText(pointt);
+                    Suc.pointUsed.setText(p1 + " ");
+                    Suc.setVisible(true);
+                    setVisible(false);
+                    Suc.price.setText(total1 + " ");
+                    System.out.println("ออกก500");
+
+                }
+            }
+
         } catch (Exception ex) {
             System.out.println(ex.toString());
             System.out.println("noooooooo data");
         }
+
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -329,7 +467,6 @@ public class check extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JLabel Name1;
     public javax.swing.JButton jButton1;
     public javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
@@ -337,14 +474,9 @@ public class check extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
+    public javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    public javax.swing.JLabel percen;
-    public javax.swing.JLabel pointused;
-    public javax.swing.JLabel telephone;
     // End of variables declaration//GEN-END:variables
-
-   
-    }
-
+}
