@@ -124,7 +124,6 @@ public class Menu2 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("UP TO YOU - Menu");
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icons.png")));
-        setUndecorated(true);
         setResizable(false);
 
         jButton1.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
