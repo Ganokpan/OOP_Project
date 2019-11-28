@@ -49,6 +49,70 @@ public class Menu2 extends javax.swing.JFrame {
             e.printStackTrace();
             System.out.println(e.toString());
         }
+        JStock2 stock = new JStock2();
+        if (stock.state1 > 1 || stock.state1 < 1) {
+            if(stock.state1 == 1){
+                Numchick.setEnabled(true);
+            }else if(stock.state1 == -1){
+                Numchick.setEnabled(false);
+            }
+        }
+        if (stock.state2 > 1 || stock.state2 < 1) {
+            if(stock.state2 == 1){
+                NumNug.setEnabled(true);
+            }else if(stock.state2 == -1){
+                NumNug.setEnabled(false);
+            }
+        }
+        if (stock.state3 > 1 || stock.state3 < 1) {
+            if(stock.state3 == 1){
+                Numcheese.setEnabled(true);
+            }else if(stock.state3 == -1){
+                Numcheese.setEnabled(false);
+            }
+        }
+        if (stock.state4 > 1 || stock.state4 < 1) {
+            if(stock.state4 == 1){
+                NumZeed.setEnabled(true);
+            }else if(stock.state4 == -1){
+                NumZeed.setEnabled(false);
+            }
+        }
+        if (stock.state5 > 1 || stock.state5 < 1) {
+            if(stock.state5 == 1){
+                Numpotato.setEnabled(true);
+            }else if(stock.state5 == -1){
+                Numpotato.setEnabled(false);
+            }
+        }
+        if (stock.state6 > 1 || stock.state6 < 1) {
+            if(stock.state6 == 1){
+                NumBerger.setEnabled(true);
+            }else if(stock.state6 == -1){
+                NumBerger.setEnabled(false);
+            }
+        }
+        if (stock.state7 > 1 || stock.state7 < 1) {
+            if(stock.state7 == 1){
+                Numcola.setEnabled(true);
+            }else if(stock.state7 == -1){
+                Numcola.setEnabled(false);
+            }
+        }
+        if (stock.state8 > 1 || stock.state8 < 1) {
+            if(stock.state8 == 1){
+                Numwater.setEnabled(true);
+            }else if(stock.state8 == -1){
+                Numwater.setEnabled(false);
+            }
+        }
+        if (stock.state9 > 1 || stock.state9 < 1) {
+            if(stock.state9 == 1){
+                Numpepsi.setEnabled(true);
+            }else if(stock.state9 == -1){
+                Numpepsi.setEnabled(false);
+            }
+        }
     }
 
     /**

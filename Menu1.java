@@ -5,14 +5,11 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import javax.swing.table.DefaultTableModel;
 
-
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author User
@@ -21,7 +18,8 @@ public class Menu1 extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu1
-     */ int Num1;
+     */
+    int Num1;
     int Num2;
     int Num3;
     int Num4;
@@ -31,10 +29,13 @@ public class Menu1 extends javax.swing.JFrame {
     int Num8;
     int Num9;
     static int total;
-    static int point;Connection _connect = null;
+    static int point;
+    Connection _connect = null;
     Statement _sql_statment = null;
+
     public Menu1() {
-        initComponents();try {
+        initComponents();
+        try {
             Class.forName("com.mysql.jdbc.Driver");
             _connect = DriverManager.getConnection("jdbc:mysql://localhost/oop"
                     + "?user=root&password=");
@@ -49,6 +50,70 @@ public class Menu1 extends javax.swing.JFrame {
             // TODO Auto-generated catch block
             e.printStackTrace();
             System.out.println(e.toString());
+        }
+        JStock2 stock = new JStock2();
+        if (stock.state1 > 1 || stock.state1 < 1) {
+            if(stock.state1 == 1){
+                Numchick.setEnabled(true);
+            }else if(stock.state1 == -1){
+                Numchick.setEnabled(false);
+            }
+        }
+        if (stock.state2 > 1 || stock.state2 < 1) {
+            if(stock.state2 == 1){
+                NumNug.setEnabled(true);
+            }else if(stock.state2 == -1){
+                NumNug.setEnabled(false);
+            }
+        }
+        if (stock.state3 > 1 || stock.state3 < 1) {
+            if(stock.state3 == 1){
+                Numcheese.setEnabled(true);
+            }else if(stock.state3 == -1){
+                Numcheese.setEnabled(false);
+            }
+        }
+        if (stock.state4 > 1 || stock.state4 < 1) {
+            if(stock.state4 == 1){
+                NumZeed.setEnabled(true);
+            }else if(stock.state4 == -1){
+                NumZeed.setEnabled(false);
+            }
+        }
+        if (stock.state5 > 1 || stock.state5 < 1) {
+            if(stock.state5 == 1){
+                Numpotato.setEnabled(true);
+            }else if(stock.state5 == -1){
+                Numpotato.setEnabled(false);
+            }
+        }
+        if (stock.state6 > 1 || stock.state6 < 1) {
+            if(stock.state6 == 1){
+                NumBerger.setEnabled(true);
+            }else if(stock.state6 == -1){
+                NumBerger.setEnabled(false);
+            }
+        }
+        if (stock.state7 > 1 || stock.state7 < 1) {
+            if(stock.state7 == 1){
+                Numcola.setEnabled(true);
+            }else if(stock.state7 == -1){
+                Numcola.setEnabled(false);
+            }
+        }
+        if (stock.state8 > 1 || stock.state8 < 1) {
+            if(stock.state8 == 1){
+                Numwater.setEnabled(true);
+            }else if(stock.state8 == -1){
+                Numwater.setEnabled(false);
+            }
+        }
+        if (stock.state9 > 1 || stock.state9 < 1) {
+            if(stock.state9 == 1){
+                Numpepsi.setEnabled(true);
+            }else if(stock.state9 == -1){
+                Numpepsi.setEnabled(false);
+            }
         }
     }
 
@@ -603,80 +668,79 @@ public class Menu1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-      
-         try {
 
-                    _sql_statment = _connect.createStatement();
+        try {
 
-                    String sql_commnad = "INSERT INTO datachicken (friedchicken,cheesechicken,spicychicken,nuggets,frenchfries,berger,coke,pepsi,drink,total) VALUES ( '" + Numchick.getText() + "','" + Numcheese.getText() + "','" + NumZeed.getText() + "','" + NumNug.getText() + "','" + Numpotato.getText() + "','" + NumBerger.getText() + "','" + Numcola.getText() + "','" + Numpepsi.getText() + "','" + Numwater.getText() + "','" + jTextField1.getText() + "')  ";
-                    _sql_statment.execute(sql_commnad);
-                    System.out.println("save data complete");
- suc1 Suc = new suc1();//ส่งรายการอาหาร
-        Suc.setVisible(true);
-        if (!(Numchick.getText()).equals("0")) {
-            String data[] = {"ไก่ทอด", Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Numchick.getText())) * 60)};
-            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
-            tbm1.addRow(data);
-        }
-        if (!(Numcheese.getText()).equals("0")) {
-            String data[] = {"ไก่ชีส", Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Numcheese.getText())) * 100)};
-            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
-            tbm1.addRow(data);
-        }
-        if (!(NumZeed.getText()).equals("0")) {
-            String data[] = {"ไก่วิ้งแซ่บ", NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(NumZeed.getText())) * 80)};
-            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
-            tbm1.addRow(data);
-        }
-        if (!(NumNug.getText()).equals("0")) {
-            String data[] = {"นักเก็ตส์", NumNug.getText(), "35", String.format("%d", (Integer.parseInt(NumNug.getText())) * 35)};
-            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
-            tbm1.addRow(data);
-        }
-        if (!(Numpotato.getText()).equals("0")) {
-            String data[] = {"เฟรนฟราย", Numpotato.getText(), "45", String.format("%d", (Integer.parseInt(Numpotato.getText())) * 45)};
-            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
-            tbm1.addRow(data);
-        }
-        if (!(NumBerger.getText()).equals("0")) {
-            String data[] = {"เบอร์เกอร์ไก่ทอด", NumBerger.getText(), "79", String.format("%d", (Integer.parseInt(NumBerger.getText())) * 79)};
-            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
-            tbm1.addRow(data);
-        }
-        if (!(Numcola.getText()).equals("0")) {
-            String data[] = {"โค้ก", Numcola.getText(), "40", String.format("%d", (Integer.parseInt(Numcola.getText())) * 40)};
-            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
-            tbm1.addRow(data);
-        }
-        if (!(Numpepsi.getText()).equals("0")) {
-            String data[] = {"เป๊ปซี่", Numpepsi.getText(), "40", String.format("%d", (Integer.parseInt(Numpepsi.getText())) * 40)};
-            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
-            tbm1.addRow(data);
-        }
-        if (!(Numwater.getText()).equals("0")) {
-            String data[] = {"น้ำเปล่า", Numwater.getText(), "15", String.format("%d", (Integer.parseInt(Numwater.getText())) * 15)};
-            DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
-            tbm1.addRow(data);
-        }
-Suc.price.setText(jTextField1.getText());
-        Suc.jTable1.setEnabled(false);
-        
+            _sql_statment = _connect.createStatement();
+
+            String sql_commnad = "INSERT INTO datachicken (friedchicken,cheesechicken,spicychicken,nuggets,frenchfries,berger,coke,pepsi,drink,total) VALUES ( '" + Numchick.getText() + "','" + Numcheese.getText() + "','" + NumZeed.getText() + "','" + NumNug.getText() + "','" + Numpotato.getText() + "','" + NumBerger.getText() + "','" + Numcola.getText() + "','" + Numpepsi.getText() + "','" + Numwater.getText() + "','" + jTextField1.getText() + "')  ";
+            _sql_statment.execute(sql_commnad);
+            System.out.println("save data complete");
+            suc1 Suc = new suc1();//ส่งรายการอาหาร
+            Suc.setVisible(true);
+            if (!(Numchick.getText()).equals("0")) {
+                String data[] = {"ไก่ทอด", Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Numchick.getText())) * 60)};
+                DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+                tbm1.addRow(data);
+            }
+            if (!(Numcheese.getText()).equals("0")) {
+                String data[] = {"ไก่ชีส", Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Numcheese.getText())) * 100)};
+                DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+                tbm1.addRow(data);
+            }
+            if (!(NumZeed.getText()).equals("0")) {
+                String data[] = {"ไก่วิ้งแซ่บ", NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(NumZeed.getText())) * 80)};
+                DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+                tbm1.addRow(data);
+            }
+            if (!(NumNug.getText()).equals("0")) {
+                String data[] = {"นักเก็ตส์", NumNug.getText(), "35", String.format("%d", (Integer.parseInt(NumNug.getText())) * 35)};
+                DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+                tbm1.addRow(data);
+            }
+            if (!(Numpotato.getText()).equals("0")) {
+                String data[] = {"เฟรนฟราย", Numpotato.getText(), "45", String.format("%d", (Integer.parseInt(Numpotato.getText())) * 45)};
+                DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+                tbm1.addRow(data);
+            }
+            if (!(NumBerger.getText()).equals("0")) {
+                String data[] = {"เบอร์เกอร์ไก่ทอด", NumBerger.getText(), "79", String.format("%d", (Integer.parseInt(NumBerger.getText())) * 79)};
+                DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+                tbm1.addRow(data);
+            }
+            if (!(Numcola.getText()).equals("0")) {
+                String data[] = {"โค้ก", Numcola.getText(), "40", String.format("%d", (Integer.parseInt(Numcola.getText())) * 40)};
+                DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+                tbm1.addRow(data);
+            }
+            if (!(Numpepsi.getText()).equals("0")) {
+                String data[] = {"เป๊ปซี่", Numpepsi.getText(), "40", String.format("%d", (Integer.parseInt(Numpepsi.getText())) * 40)};
+                DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+                tbm1.addRow(data);
+            }
+            if (!(Numwater.getText()).equals("0")) {
+                String data[] = {"น้ำเปล่า", Numwater.getText(), "15", String.format("%d", (Integer.parseInt(Numwater.getText())) * 15)};
+                DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
+                tbm1.addRow(data);
+            }
+            Suc.price.setText(jTextField1.getText());
+            Suc.jTable1.setEnabled(false);
+
 //        Suc.price.setText();
-        Suc.jTable1.getColumnModel().getColumn(0).setPreferredWidth(170);
-        Suc.setResizable(false);
-        Suc.setVisible(true);
-        Suc.pack();
-        Suc.setLocationRelativeTo(null);
-        setVisible(false);
-                } catch (Exception ex) {
-                    System.out.println(ex.toString());
-                    System.out.println("noooooooo data");
-                }
-        
-       // suc1 sc = new suc1();//ส่งรายการอาหาร
-       // sc.setVisible(true);
-        
-       // setVisible(false);
+            Suc.jTable1.getColumnModel().getColumn(0).setPreferredWidth(170);
+            Suc.setResizable(false);
+            Suc.setVisible(true);
+            Suc.pack();
+            Suc.setLocationRelativeTo(null);
+            setVisible(false);
+        } catch (Exception ex) {
+            System.out.println(ex.toString());
+            System.out.println("noooooooo data");
+        }
+
+        // suc1 sc = new suc1();//ส่งรายการอาหาร
+        // sc.setVisible(true);
+        // setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void NumchickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumchickActionPerformed
@@ -692,73 +756,81 @@ Suc.price.setText(jTextField1.getText());
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if((Numchick.getText()).equals("") || !(Numchick.getText()).equals("")){
-                    if((Numchick.getText()).equals("")){
-                        Num1 = 0;
-                    }else if(!(Numchick.getText()).equals("")){
-                        int Num = Integer.parseInt(Numchick.getText());
-                        Num1 = Num*60;
-                    }    
-                }if((Numcheese.getText()).equals("") || !(Numcheese.getText()).equals("")){
-                    if((Numcheese.getText()).equals("")){
-                        Num2 = 0;
-                    }else if(!(Numcheese.getText()).equals("")){
-                        int Num = Integer.parseInt(Numcheese.getText());
-                        Num2 = Num*100;
-                    }    
-                }if((NumZeed.getText()).equals("") || !(NumZeed.getText()).equals("")){
-                    if((NumZeed.getText()).equals("")){
-                        Num3 = 0;
-                    }else if(!(NumZeed.getText()).equals("")){
-                        int Num = Integer.parseInt(NumZeed.getText());
-                        Num3 = Num*80;
-                    }    
-                }if((NumNug.getText()).equals("") || !(NumNug.getText()).equals("")){
-                    if((NumNug.getText()).equals("")){
-                        Num4 = 0;
-                    }else if(!(NumNug.getText()).equals("")){
-                        int Num = Integer.parseInt(NumNug.getText());
-                        Num4 = Num*35;
-                    }    
-                }if((Numpotato.getText()).equals("") || !(Numpotato.getText()).equals("")){
-                    if((Numpotato.getText()).equals("")){
-                        Num5 = 0;
-                    }else if(!(Numpotato.getText()).equals("")){
-                        int Num = Integer.parseInt(Numpotato.getText());
-                        Num5 = Num*45;
-                    }    
-                }if((NumBerger.getText()).equals("") || !(NumBerger.getText()).equals("")){
-                    if((NumBerger.getText()).equals("")){
-                        Num6 = 0;
-                    }else if(!(NumBerger.getText()).equals("")){
-                        int Num = Integer.parseInt(NumBerger.getText());
-                        Num6 = Num*79;
-                    }    
-                }if((Numcola.getText()).equals("") || !(Numcola.getText()).equals("")){
-                    if((Numcola.getText()).equals("")){
-                        Num7 = 0;
-                    }else if(!(Numcola.getText()).equals("")){
-                        int Num = Integer.parseInt(Numcola.getText());
-                        Num7 = Num*40;
-                    }    
-                }if((Numpepsi.getText()).equals("") || !(Numpepsi.getText()).equals("")){
-                    if((Numpepsi.getText()).equals("")){
-                        Num8 = 0;
-                    }else if(!(Numpepsi.getText()).equals("")){
-                        int Num = Integer.parseInt(Numpepsi.getText());
-                        Num8 = Num*40;
-                    }    
-                }if((Numwater.getText()).equals("") || !(Numwater.getText()).equals("")){
-                    if((Numwater.getText()).equals("")){
-                        Num9 = 0;
-                    }else if(!(Numwater.getText()).equals("")){
-                        int Num = Integer.parseInt(Numwater.getText());
-                        Num9 = Num*15;
-                    }    
-                }
-                
-                int total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7+Num8+Num9;
-                jTextField1.setText(total+" ");
+        if ((Numchick.getText()).equals("") || !(Numchick.getText()).equals("")) {
+            if ((Numchick.getText()).equals("")) {
+                Num1 = 0;
+            } else if (!(Numchick.getText()).equals("")) {
+                int Num = Integer.parseInt(Numchick.getText());
+                Num1 = Num * 60;
+            }
+        }
+        if ((Numcheese.getText()).equals("") || !(Numcheese.getText()).equals("")) {
+            if ((Numcheese.getText()).equals("")) {
+                Num2 = 0;
+            } else if (!(Numcheese.getText()).equals("")) {
+                int Num = Integer.parseInt(Numcheese.getText());
+                Num2 = Num * 100;
+            }
+        }
+        if ((NumZeed.getText()).equals("") || !(NumZeed.getText()).equals("")) {
+            if ((NumZeed.getText()).equals("")) {
+                Num3 = 0;
+            } else if (!(NumZeed.getText()).equals("")) {
+                int Num = Integer.parseInt(NumZeed.getText());
+                Num3 = Num * 80;
+            }
+        }
+        if ((NumNug.getText()).equals("") || !(NumNug.getText()).equals("")) {
+            if ((NumNug.getText()).equals("")) {
+                Num4 = 0;
+            } else if (!(NumNug.getText()).equals("")) {
+                int Num = Integer.parseInt(NumNug.getText());
+                Num4 = Num * 35;
+            }
+        }
+        if ((Numpotato.getText()).equals("") || !(Numpotato.getText()).equals("")) {
+            if ((Numpotato.getText()).equals("")) {
+                Num5 = 0;
+            } else if (!(Numpotato.getText()).equals("")) {
+                int Num = Integer.parseInt(Numpotato.getText());
+                Num5 = Num * 45;
+            }
+        }
+        if ((NumBerger.getText()).equals("") || !(NumBerger.getText()).equals("")) {
+            if ((NumBerger.getText()).equals("")) {
+                Num6 = 0;
+            } else if (!(NumBerger.getText()).equals("")) {
+                int Num = Integer.parseInt(NumBerger.getText());
+                Num6 = Num * 79;
+            }
+        }
+        if ((Numcola.getText()).equals("") || !(Numcola.getText()).equals("")) {
+            if ((Numcola.getText()).equals("")) {
+                Num7 = 0;
+            } else if (!(Numcola.getText()).equals("")) {
+                int Num = Integer.parseInt(Numcola.getText());
+                Num7 = Num * 40;
+            }
+        }
+        if ((Numpepsi.getText()).equals("") || !(Numpepsi.getText()).equals("")) {
+            if ((Numpepsi.getText()).equals("")) {
+                Num8 = 0;
+            } else if (!(Numpepsi.getText()).equals("")) {
+                int Num = Integer.parseInt(Numpepsi.getText());
+                Num8 = Num * 40;
+            }
+        }
+        if ((Numwater.getText()).equals("") || !(Numwater.getText()).equals("")) {
+            if ((Numwater.getText()).equals("")) {
+                Num9 = 0;
+            } else if (!(Numwater.getText()).equals("")) {
+                int Num = Integer.parseInt(Numwater.getText());
+                Num9 = Num * 15;
+            }
+        }
+
+        int total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
+        jTextField1.setText(total + " ");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void NumcolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumcolaActionPerformed
@@ -790,7 +862,8 @@ Suc.price.setText(jTextField1.getText());
     }//GEN-LAST:event_NumBergerActionPerformed
 
     private void jLabel31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel31MouseClicked
-        setDefaultCloseOperation(EXIT_ON_CLOSE);setVisible(false);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(false);
     }//GEN-LAST:event_jLabel31MouseClicked
 
     /**

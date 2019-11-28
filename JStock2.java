@@ -17,6 +17,17 @@ public class JStock2 extends javax.swing.JFrame {
     /**
      * Creates new form JStock
      */
+    static int state1 = 0;
+    static int state2 = 0;
+    static int state3 = 0;
+    static int state4 = 0;
+    static int state5 = 0;
+    static int state6 = 0;
+    static int state7 = 0;
+    static int state8 = 0;
+    static int state9 = 0;
+   
+    
     public JStock2() {
         initComponents();
     }
@@ -425,10 +436,20 @@ public class JStock2 extends javax.swing.JFrame {
         Addpepsi.setBackground(new java.awt.Color(102, 255, 102));
         Addpepsi.setFont(new java.awt.Font("CordiaUPC", 0, 18)); // NOI18N
         Addpepsi.setText("เพิ่ม");
+        Addpepsi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddpepsiActionPerformed(evt);
+            }
+        });
 
         jButton16.setBackground(new java.awt.Color(255, 0, 51));
         jButton16.setFont(new java.awt.Font("CordiaUPC", 0, 18)); // NOI18N
         jButton16.setText("หมด");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("CordiaUPC", 1, 24)); // NOI18N
         jLabel9.setText("เป็ปซี่");
@@ -787,71 +808,97 @@ public class JStock2 extends javax.swing.JFrame {
 
     private void AddchickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddchickActionPerformed
         // TODO add your handling code here:
+        state1 = 1;
     }//GEN-LAST:event_AddchickActionPerformed
 
     private void ChickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChickActionPerformed
         // หมด
+        state1 = -1;
     }//GEN-LAST:event_ChickActionPerformed
 
     private void AddNugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddNugActionPerformed
         // TODO add your handling code here:
+        state2 = 1;
     }//GEN-LAST:event_AddNugActionPerformed
 
     private void AddCheeseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddCheeseActionPerformed
         // TODO add your handling code here:
+        state3 = -1;
     }//GEN-LAST:event_AddCheeseActionPerformed
 
     private void CheeseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheeseActionPerformed
         // หมด
+        state3 = -1;
     }//GEN-LAST:event_CheeseActionPerformed
 
     private void AddZeedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddZeedActionPerformed
         // TODO add your handling code here:
+        state4 = 1;
     }//GEN-LAST:event_AddZeedActionPerformed
 
     private void ZeedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeedActionPerformed
         // หมด
+        state4 = -1;
     }//GEN-LAST:event_ZeedActionPerformed
 
     private void NugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NugActionPerformed
         // หมด
+        state2 = -1;
     }//GEN-LAST:event_NugActionPerformed
 
     private void AddpotatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddpotatoActionPerformed
         // TODO add your handling code here:
+        state5 = 1;
     }//GEN-LAST:event_AddpotatoActionPerformed
 
     private void potatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_potatoActionPerformed
         // หมด
+        state5 = -1;
     }//GEN-LAST:event_potatoActionPerformed
 
     private void AddBergerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddBergerActionPerformed
         // TODO add your handling code here:
+        state6 = 1;
     }//GEN-LAST:event_AddBergerActionPerformed
 
     private void bergerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bergerActionPerformed
         // หมด
+        state6 = -1;
     }//GEN-LAST:event_bergerActionPerformed
 
     private void AddColaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddColaActionPerformed
         // TODO add your handling code here:
+        state7 = 1;
     }//GEN-LAST:event_AddColaActionPerformed
 
     private void ColaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ColaActionPerformed
         // หมด
+        state7 = -1;
     }//GEN-LAST:event_ColaActionPerformed
 
     private void AddWaterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddWaterActionPerformed
         // TODO add your handling code here:
+        state8 = 1;
     }//GEN-LAST:event_AddWaterActionPerformed
 
     private void waterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_waterActionPerformed
         // หมด
+        state8 = -1;
     }//GEN-LAST:event_waterActionPerformed
 
     private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel1MouseEntered
+
+    private void AddpepsiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddpepsiActionPerformed
+        // TODO add your handling code here:
+        state9 = 1;
+    }//GEN-LAST:event_AddpepsiActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+        state9 = -1;
+    }//GEN-LAST:event_jButton16ActionPerformed
 
     /**
      * @param args the command line arguments
