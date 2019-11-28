@@ -6,8 +6,6 @@ import java.awt.Toolkit;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 /**
  *
  * @author User
@@ -773,7 +771,8 @@ public class JStock2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-        setVisible(false);setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(false);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void AddchickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddchickActionPerformed
@@ -782,6 +781,11 @@ public class JStock2 extends javax.swing.JFrame {
 
     private void ChickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChickActionPerformed
         // หมด
+
+       
+        Menu1 menu1 = new Menu1();
+//        menu1.setVisible(true);
+        menu1.Numchick.setEnabled(false);
     }//GEN-LAST:event_ChickActionPerformed
 
     private void AddNugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddNugActionPerformed
