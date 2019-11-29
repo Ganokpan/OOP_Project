@@ -192,6 +192,7 @@ public class Menu2 extends javax.swing.JFrame {
         setUndecorated(true);
         setResizable(false);
 
+        jPanel1.setBackground(new java.awt.Color(250, 236, 201));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         jPanel1.setPreferredSize(new java.awt.Dimension(732, 768));
 
@@ -430,7 +431,7 @@ public class Menu2 extends javax.swing.JFrame {
                         .addComponent(jLabel34)
                         .addGap(18, 18, 18)
                         .addComponent(telephone1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 109, Short.MAX_VALUE)
                         .addComponent(jLabel35)
                         .addGap(18, 18, 18)
                         .addComponent(Allpoint, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -438,7 +439,7 @@ public class Menu2 extends javax.swing.JFrame {
                         .addComponent(jLabel36))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(239, 239, 239)
+                        .addGap(217, 217, 217)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
@@ -452,15 +453,14 @@ public class Menu2 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 19, Short.MAX_VALUE)
+                        .addContainerGap()
+                        .addComponent(jLabel37))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
                         .addComponent(jLabel29)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(60, 60, 60))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel37)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -892,17 +892,17 @@ public class Menu2 extends javax.swing.JFrame {
 
 
         if (!(Numchick.getText()).equals("0")) {
-            String data[] = {"ไก่ทอด", Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Numchick.getText())) * 60)};
+            String data[] = {"ไก่ทอดสูตรต้นตำรับ", Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Numchick.getText())) * 60)};
             DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
             tbm1.addRow(data);
         }
         if (!(Numcheese.getText()).equals("0")) {
-            String data[] = {"ไก่ชีส", Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Numcheese.getText())) * 100)};
+            String data[] = {"ไก่ทอดลาวาชีส", Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Numcheese.getText())) * 100)};
             DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
             tbm1.addRow(data);
         }
         if (!(NumZeed.getText()).equals("0")) {
-            String data[] = {"ไก่วิ้งแซ่บ", NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(NumZeed.getText())) * 80)};
+            String data[] = {"ไก่ทอดแซ่บซี๊ด", NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(NumZeed.getText())) * 80)};
             DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
             tbm1.addRow(data);
         }

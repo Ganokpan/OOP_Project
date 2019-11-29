@@ -126,22 +126,41 @@ public class Menu1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel9 = new javax.swing.JPanel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        Numcola = new javax.swing.JTextField();
+        Numpepsi = new javax.swing.JTextField();
+        Numwater = new javax.swing.JTextField();
         jPanel6 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -161,27 +180,87 @@ public class Menu1 extends javax.swing.JFrame {
         Numpotato = new javax.swing.JTextField();
         NumBerger = new javax.swing.JTextField();
         NumNug = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        Numcola = new javax.swing.JTextField();
-        Numpepsi = new javax.swing.JTextField();
-        Numwater = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+
+        jPanel9.setBackground(new java.awt.Color(234, 182, 106));
+
+        jLabel32.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel32.setText("รายการ");
+
+        jLabel33.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel33.setText("ราคา");
+
+        jLabel34.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel34.setText("จำนวน");
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(jLabel32)
+                .addGap(87, 87, 87)
+                .addComponent(jLabel33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel34)
+                .addGap(26, 26, 26))
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel32)
+                    .addComponent(jLabel33)
+                    .addComponent(jLabel34))
+                .addContainerGap())
+        );
+
+        jPanel10.setBackground(new java.awt.Color(234, 182, 106));
+
+        jLabel35.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel35.setText("รายการ");
+
+        jLabel36.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel36.setText("ราคา");
+
+        jLabel37.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel37.setText("จำนวน");
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel36)
+                .addGap(51, 51, 51)
+                .addComponent(jLabel37)
+                .addContainerGap())
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35)
+                    .addComponent(jLabel36)
+                    .addComponent(jLabel37))
+                .addContainerGap())
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("UP TO YOU -  MENU");
         setResizable(false);
 
+        jPanel1.setBackground(new java.awt.Color(250, 236, 201));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
 
         jPanel2.setBackground(new java.awt.Color(218, 77, 79));
@@ -211,12 +290,11 @@ public class Menu1 extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel31))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(246, 246, 246)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabel30))
-                            .addComponent(jLabel29))))
+                        .addGap(276, 276, 276)
+                        .addComponent(jLabel29))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(297, 297, 297)
+                        .addComponent(jLabel30)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -224,11 +302,90 @@ public class Menu1 extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel31)
-                .addGap(24, 24, 24)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel29)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel30)
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
+        );
+
+        jPanel3.setBackground(new java.awt.Color(234, 132, 94));
+
+        jLabel4.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel4.setText("รายการเครื่องดื่ม");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(61, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(101, 101, 101))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel4.setBackground(new java.awt.Color(234, 132, 94));
+
+        jLabel3.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel3.setText("รายการอาหาร");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(131, 131, 131))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jLabel3)
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+
+        jPanel7.setBackground(new java.awt.Color(234, 182, 106));
+
+        jLabel5.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel5.setText("รายการ");
+
+        jLabel6.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel6.setText("ราคา");
+
+        jLabel7.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel7.setText("จำนวน");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel6)
+                .addGap(51, 51, 51)
+                .addComponent(jLabel7)
+                .addContainerGap())
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7))
+                .addContainerGap())
         );
 
         jPanel8.setBackground(new java.awt.Color(234, 182, 106));
@@ -247,18 +404,18 @@ public class Menu1 extends javax.swing.JFrame {
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(64, 64, 64)
+                .addGap(39, 39, 39)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                .addGap(87, 87, 87)
                 .addComponent(jLabel9)
-                .addGap(92, 92, 92)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel10)
-                .addContainerGap())
+                .addGap(26, 26, 26))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                .addContainerGap(23, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(jLabel9)
@@ -266,68 +423,74 @@ public class Menu1 extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel3.setBackground(new java.awt.Color(234, 132, 94));
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel4.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
-        jLabel4.setText("รายการเครื่องดื่ม");
+        jLabel11.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
+        jLabel11.setText("โค้ก");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4)
-                .addGap(56, 56, 56))
+        jLabel12.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
+        jLabel12.setText("เป๊บซี่");
+
+        jLabel13.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
+        jLabel13.setText("น้ำเปล่า");
+
+        jLabel20.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
+        jLabel20.setText("40 บาท");
+
+        jLabel21.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
+        jLabel21.setText("40 บาท");
+
+        jLabel22.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
+        jLabel22.setText("15 บาท");
+
+        Numcola.setText("0");
+
+        Numpepsi.setText("0");
+
+        Numwater.setText("0");
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel13))
+                .addGap(44, 44, 44)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel21)
+                    .addComponent(jLabel20)
+                    .addComponent(jLabel22))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Numpepsi, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
+                    .addComponent(Numcola)
+                    .addComponent(Numwater))
+                .addContainerGap())
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4)
-                .addGap(22, 22, 22))
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel20)
+                    .addComponent(Numcola, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel21)
+                    .addComponent(Numpepsi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel22)
+                    .addComponent(Numwater, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        jButton1.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
-        jButton1.setText("ยืนยัน");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton2.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
-        jButton2.setText("ส่งรายการอาหาร");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jPanel4.setBackground(new java.awt.Color(234, 132, 94));
-
-        jLabel3.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
-        jLabel3.setText("รายการอาหาร");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(143, 143, 143))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(40, 40, 40))
-        );
-
-        jLabel1.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
-        jLabel1.setText("ราคาอาหารทั้งหมด");
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -375,32 +538,12 @@ public class Menu1 extends javax.swing.JFrame {
         });
 
         Numcheese.setText("0");
-        Numcheese.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NumcheeseActionPerformed(evt);
-            }
-        });
 
         NumZeed.setText("0");
-        NumZeed.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NumZeedActionPerformed(evt);
-            }
-        });
 
         Numpotato.setText("0");
-        Numpotato.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NumpotatoActionPerformed(evt);
-            }
-        });
 
         NumBerger.setText("0");
-        NumBerger.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NumBergerActionPerformed(evt);
-            }
-        });
 
         NumNug.setText("0");
         NumNug.addActionListener(new java.awt.event.ActionListener() {
@@ -430,15 +573,15 @@ public class Menu1 extends javax.swing.JFrame {
                     .addComponent(jLabel26)
                     .addComponent(jLabel27)
                     .addComponent(jLabel28))
-                .addGap(57, 57, 57)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(NumNug, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
-                    .addComponent(NumBerger)
-                    .addComponent(Numpotato)
-                    .addComponent(NumZeed)
-                    .addComponent(Numcheese)
-                    .addComponent(Numchick))
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(NumBerger, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Numpotato, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(NumZeed, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Numcheese, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Numchick, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(NumNug, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -473,8 +616,11 @@ public class Menu1 extends javax.swing.JFrame {
                     .addComponent(jLabel19)
                     .addComponent(jLabel28)
                     .addComponent(NumNug, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
+
+        jLabel1.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jLabel1.setText("ราคาอาหารทั้งหมด");
 
         jTextField1.setEnabled(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -483,127 +629,24 @@ public class Menu1 extends javax.swing.JFrame {
             }
         });
 
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel11.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
-        jLabel11.setText("โค้ก");
-
-        jLabel12.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
-        jLabel12.setText("เป๊บซี่");
-
-        jLabel13.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
-        jLabel13.setText("น้ำเปล่า");
-
-        jLabel20.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
-        jLabel20.setText("40 บาท");
-
-        jLabel21.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
-        jLabel21.setText("40 บาท");
-
-        jLabel22.setFont(new java.awt.Font("Monospaced", 0, 17)); // NOI18N
-        jLabel22.setText("15 บาท");
-
-        Numcola.setText("0");
-        Numcola.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NumcolaActionPerformed(evt);
-            }
-        });
-
-        Numpepsi.setText("0");
-        Numpepsi.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NumpepsiActionPerformed(evt);
-            }
-        });
-
-        Numwater.setText("0");
-        Numwater.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NumwaterActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel13))
-                .addGap(55, 55, 55)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel21)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel22))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Numpepsi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
-                    .addComponent(Numcola, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Numwater))
-                .addGap(22, 22, 22))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel20)
-                    .addComponent(Numcola, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel21)
-                    .addComponent(Numpepsi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel22)
-                    .addComponent(Numwater, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(131, Short.MAX_VALUE))
-        );
-
         jLabel2.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
         jLabel2.setText("บาท");
 
-        jPanel7.setBackground(new java.awt.Color(234, 182, 106));
+        jButton1.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jButton1.setText("ยืนยัน");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
-        jLabel5.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
-        jLabel5.setText("รายการ");
-
-        jLabel6.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
-        jLabel6.setText("ราคา");
-
-        jLabel7.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
-        jLabel7.setText("จำนวน");
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel5)
-                .addGap(54, 54, 54)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                .addComponent(jLabel7)
-                .addContainerGap())
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(23, Short.MAX_VALUE)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7))
-                .addContainerGap())
-        );
+        jButton2.setFont(new java.awt.Font("Monospaced", 1, 17)); // NOI18N
+        jButton2.setText("ส่งรายการอาหาร");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -611,105 +654,243 @@ public class Menu1 extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(1, 1, 1)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(139, 139, 139)
-                            .addComponent(jLabel1)
-                            .addGap(41, 41, 41)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(31, 31, 31)
-                            .addComponent(jLabel2))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(87, 87, 87)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(103, 103, 103)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(0, 100, Short.MAX_VALUE))
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(1, 1, 1)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(113, 113, 113)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(103, 103, 103)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(jLabel2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(0, 0, 0)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addGap(63, 63, 63)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(113, 113, 113))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addContainerGap(299, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(291, 291, 291)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel1)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(2, 2, 2)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jLabel2))
-                    .addGap(13, 13, 13)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addContainerGap()))
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(13, 13, 13)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jLabel31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel31MouseClicked
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(false);
+    }//GEN-LAST:event_jLabel31MouseClicked
 
+    private void NumchickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumchickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NumchickActionPerformed
+
+    private void NumNugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumNugActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NumNugActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        if ((Numchick.getText()).equals("") || !(Numchick.getText()).equals("")) {
+            if ((Numchick.getText()).equals("")) {
+                Num1 = 0;
+            } else if (!(Numchick.getText()).equals("")) {
+                if ((Numchick.getText()).equals("0")) {
+                    Num1 = 0;
+                } else {
+                    int Num = Integer.parseInt(Numchick.getText());
+                    Num1 = Num * 60;
+                    point += 30;
+                }
+
+            }
+        }
+        if ((Numcheese.getText()).equals("") || !(Numcheese.getText()).equals("")) {
+            if ((Numcheese.getText()).equals("")) {
+                Num2 = 0;
+            } else if (!(Numcheese.getText()).equals("")) {
+                if ((Numcheese.getText()).equals("0")) {
+                    Num2 = 0;
+                } else {
+                    int Num = Integer.parseInt(Numcheese.getText());
+                    Num2 = Num * 100;
+                    point += 30;
+                }
+            }
+        }
+        if ((NumZeed.getText()).equals("") || !(NumZeed.getText()).equals("")) {
+            if ((NumZeed.getText()).equals("")) {
+                Num3 = 0;
+            } else if (!(NumZeed.getText()).equals("")) {
+                if ((NumZeed.getText()).equals("0")) {
+                    Num3 = 0;
+                } else {
+                    int Num = Integer.parseInt(NumZeed.getText());
+                    Num3 = Num * 80;
+                    point += 30;
+                }
+
+            }
+        }
+        if ((NumNug.getText()).equals("") || !(NumNug.getText()).equals("")) {
+            if ((NumNug.getText()).equals("")) {
+                Num4 = 0;
+            } else if (!(NumNug.getText()).equals("")) {
+                if ((NumNug.getText()).equals("0")) {
+                    Num4 = 0;
+                } else {
+                    int Num = Integer.parseInt(NumNug.getText());
+                    Num4 = Num * 35;
+                    point += 30;
+                }
+            }
+        }
+        if ((Numpotato.getText()).equals("") || !(Numpotato.getText()).equals("")) {
+            if ((Numpotato.getText()).equals("")) {
+                Num5 = 0;
+            } else if (!(Numpotato.getText()).equals("")) {
+                if ((Numpotato.getText()).equals("0")) {
+                    Num5 = 0;
+                } else {
+                    int Num = Integer.parseInt(Numpotato.getText());
+                    Num5 = Num * 45;
+                    point += 30;
+                }
+
+            }
+        }
+        if ((NumBerger.getText()).equals("") || !(NumBerger.getText()).equals("")) {
+            if ((NumBerger.getText()).equals("")) {
+                Num6 = 0;
+            } else if (!(NumBerger.getText()).equals("")) {
+                if ((NumBerger.getText()).equals("0")) {
+                    Num6 = 0;
+                } else {
+                    int Num = Integer.parseInt(NumBerger.getText());
+                    Num6 = Num * 79;
+                    point += 30;
+                }
+
+            }
+        }
+        if ((Numcola.getText()).equals("") || !(Numcola.getText()).equals("")) {
+            if ((Numcola.getText()).equals("")) {
+                Num7 = 0;
+            } else if (!(Numcola.getText()).equals("")) {
+                if ((Numcola.getText()).equals("0")) {
+                    Num7 = 0;
+                } else {
+                    int Num = Integer.parseInt(Numcola.getText());
+                    Num7 = Num * 40;
+                    point += 30;
+                }
+
+            }
+        }
+        if ((Numpepsi.getText()).equals("") || !(Numpepsi.getText()).equals("")) {
+            if ((Numpepsi.getText()).equals("")) {
+                Num8 = 0;
+            } else if (!(Numpepsi.getText()).equals("")) {
+                if ((Numpepsi.getText()).equals("0")) {
+                    Num8 = 0;
+                } else {
+                    int Num = Integer.parseInt(Numpepsi.getText());
+                    Num8 = Num * 40;
+                    point += 30;
+                }
+
+            }
+        }
+        if ((Numwater.getText()).equals("") || !(Numwater.getText()).equals("")) {
+            if ((Numwater.getText()).equals("")) {
+                Num9 = 0;
+            } else if (!(Numwater.getText()).equals("")) {
+                if ((Numwater.getText()).equals("0")) {
+                    Num9 = 0;
+                } else {
+                    int Num = Integer.parseInt(Numwater.getText());
+                    Num9 = Num * 15;
+                    point += 30;
+                }
+
+            }
+        }
+
+        total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
+        jTextField1.setText(total + " ");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         try {
 
             _sql_statment = _connect.createStatement();
 
-            String sql_commnad = "INSERT INTO datachicken (friedchicken,cheesechicken,spicychicken,nuggets,frenchfries,berger,coke,pepsi,drink,total) VALUES ( '" + Numchick.getText() + "','" + Numcheese.getText() + "','" + NumZeed.getText() + "','" + NumNug.getText() + "','" + Numpotato.getText() + "','" + NumBerger.getText() + "','" + Numcola.getText() + "','" + Numpepsi.getText() + "','" + Numwater.getText() + "','" + jTextField1.getText() + "')  ";
+            String sql_commnad = "INSERT INTO datachicken (friedchicken,cheesechicken,spicychicken,nuggets,frenchfries,berger,coke,pepsi,drink,total,pointmember,firstname,telephone) VALUES ( '" + Numchick.getText() + "','" + Numcheese.getText() + "','" + NumZeed.getText() + "','" + NumNug.getText() + "','" + Numpotato.getText() + "','" + NumBerger.getText() + "','" + Numcola.getText() + "','" + Numpepsi.getText() + "','" + Numwater.getText() + "','" + jTextField1.getText() + "') ";
             _sql_statment.execute(sql_commnad);
             System.out.println("save data complete");
             suc1 Suc = new suc1();//ส่งรายการอาหาร
             Suc.setVisible(true);
             if (!(Numchick.getText()).equals("0")) {
-                String data[] = {"ไก่ทอด", Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Numchick.getText())) * 60)};
+                String data[] = {"ไก่ทอดสูตรต้นตำรับ", Numchick.getText(), "60", String.format("%d", (Integer.parseInt(Numchick.getText())) * 60)};
                 DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
                 tbm1.addRow(data);
             }
             if (!(Numcheese.getText()).equals("0")) {
-                String data[] = {"ไก่ชีส", Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Numcheese.getText())) * 100)};
+                String data[] = {"ไก่ทอดลาวาชีส", Numcheese.getText(), "100", String.format("%d", (Integer.parseInt(Numcheese.getText())) * 100)};
                 DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
                 tbm1.addRow(data);
             }
             if (!(NumZeed.getText()).equals("0")) {
-                String data[] = {"ไก่วิ้งแซ่บ", NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(NumZeed.getText())) * 80)};
+                String data[] = {"ไก่ทอดแซ่บซี๊ด", NumZeed.getText(), "80", String.format("%d", (Integer.parseInt(NumZeed.getText())) * 80)};
                 DefaultTableModel tbm1 = (DefaultTableModel) Suc.jTable1.getModel();
                 tbm1.addRow(data);
             }
@@ -746,7 +927,7 @@ public class Menu1 extends javax.swing.JFrame {
             Suc.price.setText(jTextField1.getText());
             Suc.jTable1.setEnabled(false);
 
-//        Suc.price.setText();
+//          Suc.price.setText();
             Suc.jTable1.getColumnModel().getColumn(0).setPreferredWidth(170);
             Suc.setResizable(false);
             Suc.setVisible(true);
@@ -757,134 +938,7 @@ public class Menu1 extends javax.swing.JFrame {
             System.out.println(ex.toString());
             System.out.println("noooooooo data");
         }
-
-        // suc1 sc = new suc1();//ส่งรายการอาหาร
-        // sc.setVisible(true);
-        // setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void NumchickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumchickActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NumchickActionPerformed
-
-    private void NumNugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumNugActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NumNugActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if ((Numchick.getText()).equals("") || !(Numchick.getText()).equals("")) {
-            if ((Numchick.getText()).equals("")) {
-                Num1 = 0;
-            } else if (!(Numchick.getText()).equals("")) {
-                int Num = Integer.parseInt(Numchick.getText());
-                Num1 = Num * 60;
-            }
-        }
-        if ((Numcheese.getText()).equals("") || !(Numcheese.getText()).equals("")) {
-            if ((Numcheese.getText()).equals("")) {
-                Num2 = 0;
-            } else if (!(Numcheese.getText()).equals("")) {
-                int Num = Integer.parseInt(Numcheese.getText());
-                Num2 = Num * 100;
-            }
-        }
-        if ((NumZeed.getText()).equals("") || !(NumZeed.getText()).equals("")) {
-            if ((NumZeed.getText()).equals("")) {
-                Num3 = 0;
-            } else if (!(NumZeed.getText()).equals("")) {
-                int Num = Integer.parseInt(NumZeed.getText());
-                Num3 = Num * 80;
-            }
-        }
-        if ((NumNug.getText()).equals("") || !(NumNug.getText()).equals("")) {
-            if ((NumNug.getText()).equals("")) {
-                Num4 = 0;
-            } else if (!(NumNug.getText()).equals("")) {
-                int Num = Integer.parseInt(NumNug.getText());
-                Num4 = Num * 35;
-            }
-        }
-        if ((Numpotato.getText()).equals("") || !(Numpotato.getText()).equals("")) {
-            if ((Numpotato.getText()).equals("")) {
-                Num5 = 0;
-            } else if (!(Numpotato.getText()).equals("")) {
-                int Num = Integer.parseInt(Numpotato.getText());
-                Num5 = Num * 45;
-            }
-        }
-        if ((NumBerger.getText()).equals("") || !(NumBerger.getText()).equals("")) {
-            if ((NumBerger.getText()).equals("")) {
-                Num6 = 0;
-            } else if (!(NumBerger.getText()).equals("")) {
-                int Num = Integer.parseInt(NumBerger.getText());
-                Num6 = Num * 79;
-            }
-        }
-        if ((Numcola.getText()).equals("") || !(Numcola.getText()).equals("")) {
-            if ((Numcola.getText()).equals("")) {
-                Num7 = 0;
-            } else if (!(Numcola.getText()).equals("")) {
-                int Num = Integer.parseInt(Numcola.getText());
-                Num7 = Num * 40;
-            }
-        }
-        if ((Numpepsi.getText()).equals("") || !(Numpepsi.getText()).equals("")) {
-            if ((Numpepsi.getText()).equals("")) {
-                Num8 = 0;
-            } else if (!(Numpepsi.getText()).equals("")) {
-                int Num = Integer.parseInt(Numpepsi.getText());
-                Num8 = Num * 40;
-            }
-        }
-        if ((Numwater.getText()).equals("") || !(Numwater.getText()).equals("")) {
-            if ((Numwater.getText()).equals("")) {
-                Num9 = 0;
-            } else if (!(Numwater.getText()).equals("")) {
-                int Num = Integer.parseInt(Numwater.getText());
-                Num9 = Num * 15;
-            }
-        }
-
-        int total = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9;
-        jTextField1.setText(total + " ");
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void NumcolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumcolaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NumcolaActionPerformed
-
-    private void NumpepsiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumpepsiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NumpepsiActionPerformed
-
-    private void NumwaterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumwaterActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NumwaterActionPerformed
-
-    private void NumcheeseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumcheeseActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NumcheeseActionPerformed
-
-    private void NumZeedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumZeedActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NumZeedActionPerformed
-
-    private void NumpotatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumpotatoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NumpotatoActionPerformed
-
-    private void NumBergerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumBergerActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NumBergerActionPerformed
-
-    private void jLabel31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel31MouseClicked
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setVisible(false);
-    }//GEN-LAST:event_jLabel31MouseClicked
 
     /**
      * @param args the command line arguments
@@ -931,8 +985,8 @@ public class Menu1 extends javax.swing.JFrame {
     public static javax.swing.JTextField Numpepsi;
     public static javax.swing.JTextField Numpotato;
     public static javax.swing.JTextField Numwater;
-    public javax.swing.JButton jButton1;
-    public javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -958,6 +1012,12 @@ public class Menu1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -965,6 +1025,7 @@ public class Menu1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -972,6 +1033,7 @@ public class Menu1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     public javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
